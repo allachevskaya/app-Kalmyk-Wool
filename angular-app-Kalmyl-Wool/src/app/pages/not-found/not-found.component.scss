@@ -1,0 +1,28 @@
+.notFound{
+    background-color: #3D4043;
+    height: max-content;
+    &-content{
+        background-image: url('../../../assets/images/company/decor.png');
+        height: 800px;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & h3{
+            background-color: #3D4043;
+            padding: 100px;
+            color: #fff;
+            font-size: 40px;
+            line-height: 60px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .notFound-content h3{
+        font-size: 33px;
+    line-height: 51px;
+    padding: 50px;
+    }
+}
