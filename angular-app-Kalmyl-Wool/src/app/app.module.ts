@@ -25,6 +25,8 @@ import { ProcessComponent } from './components/pages/process/process.component';
 import { NewsComponent } from './components/pages/news/news.component';
 import { NewsCardComponent } from './components/pages/news-card/news-card.component';
 import { FormComponent } from './components/pages/form/form.component';
+import { LoginComponent } from './pages/login/login.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -48,12 +50,15 @@ import { FormComponent } from './components/pages/form/form.component';
     ProcessComponent,
     NewsComponent,
     NewsCardComponent,
-    FormComponent
+    FormComponent,
+    LoginComponent,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
