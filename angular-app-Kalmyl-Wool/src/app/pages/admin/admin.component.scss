@@ -2,4 +2,28 @@
     min-height: 100vh;
     width: 100%;
     background-color: #3D4043;
+    padding: 0 180px;
+    &__header{
+        width: 100%;
+        border: 1px solid red;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        &-logo{
+            width: 80px;
+            height: 90px;
+            position: absolute;
+            left: 50%;
+            top:48px;
+            transform: translate(-50%,-50%);
+        }
+        &-nav{
+            display: flex;
+            align-items: flex-end;
+            gap:20px;
+            & a{
+                color:#fff;
+            }
+        }
+    }
 }
