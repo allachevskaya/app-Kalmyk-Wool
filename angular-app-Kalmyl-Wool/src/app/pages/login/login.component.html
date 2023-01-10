@@ -1,4 +1,4 @@
-<section class="login">
+<section class="login" *ngIf="!openAdmin">
     <app-header></app-header>
     <div class="login-container">
         <form action=""
@@ -18,4 +18,9 @@
         </form>
     </div>
    
+</section>
+
+
+<section class="admin" *ngIf="openAdmin" >
+    <app-admin></app-admin>
 </section>
