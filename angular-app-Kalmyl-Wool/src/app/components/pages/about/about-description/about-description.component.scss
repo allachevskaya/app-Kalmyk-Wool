@@ -1,0 +1,164 @@
+
+.about__description {
+
+    background: #FFFFFF;
+    border: 1px solid #787878;
+    border-radius: 260.594px;
+    padding: 150px 97px;
+    height: max-content;
+    width: 506px;
+    margin: 0 50px;
+    margin-top: -557px;
+
+    & p {
+
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 41px;
+        /* or 171% */
+
+        text-align: center;
+
+        /* серы */
+
+        color: #3D4043;
+
+    }
+}
+
+.about__subDescription {
+    margin-top: 180px;
+    display: grid;
+    grid-template-rows: 141px 292px;
+    padding: 0 50px;
+    align-items: center;
+
+}
+
+
+
+.__about__subDescription-box::after {
+    content: '';
+    width: 1px;
+    height: 80px;
+    background-color: #3D4043;
+    position: relative;
+    top: -175px;
+    left: 0;
+}
+
+
+
+
+@media (max-width:1180px) {
+  
+
+ 
+
+    .about__description {
+        padding: 107px 73px;
+        height: max-content;
+        width: 427px;
+        position: relative;
+        top: 63px;
+        height: auto;
+
+        & p {
+            font-size: 19px;
+        }
+    }
+
+
+}
+
+@media (max-width:942px) {
+  
+    .about__description {
+        top: 371px;
+    }
+
+  
+
+    .about__description {
+        margin-left: 0;
+    }
+
+}
+
+
+
+@media (max-width:800px) {
+
+    .about__description {
+        position: static;
+        margin: 0;
+        width: 100%;
+        padding: 0px 50px 50px 80px;
+        border-radius: 0;
+        border: 0;
+        margin-top: -156px;
+        
+
+        & p {
+            padding: 0px 50px 50px 0px;
+        }
+    }
+
+     .about__description::before {
+        content: url('../../../../../assets/images/decor-right.png  ');
+        height: 130px;
+        width: 30px;
+        position: relative;
+        top: 45px;
+        left: -22px;
+
+    }
+
+
+
+    .about__subDescription {
+        display: none;
+    }
+}
+
+
+@media (max-width:628px) {
+ 
+
+    .about__description p {
+        line-height: 38px;
+        font-size: 17px;
+    }
+    
+}
+
+
+@media (max-width:564px) {
+    .about__description {
+        padding: 0px;
+       
+        padding-bottom: 66px;
+
+        & p {
+            padding: 0 20px 20px 20px;
+        }
+    }
+
+    .about__description::before {
+        content: url('../../../../../assets/images/decor-left.png');
+        height: 130px;
+        width: 30px;
+        position: relative;
+        top: 45px;
+        left: -2px;
+
+    }
+}
+
+@media (max-width: 447px) {
+    .about__description {
+        padding: 0;
+    }
+}
+
+

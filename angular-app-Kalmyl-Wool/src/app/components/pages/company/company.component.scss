@@ -1,0 +1,244 @@
+.company {
+    margin: 0 0px;
+    margin-bottom: 100px;
+    background: #3D4043;
+    font-family: 'Montserrat';
+    padding-bottom: 280px;
+    position: relative;
+
+}
+
+@media (max-width:1283px) {
+    .company {
+        margin: 0 0px;
+    }
+}
+
+@media (max-width:1043px) {
+    .company {
+        margin: 0 0px;
+    }
+
+}
+
+/*===========company decor============*/
+.company-decors {
+    height: max-content;
+    position: relative;
+    top: -92px;
+
+    &-decor {
+        height: 180px;
+        width: 270px;
+        background-image: url('../../../../assets/images/company/frame1.png');
+        background-repeat: no-repeat;
+        margin-left: auto;
+    }
+
+    &-decorlittle {
+        background-image: url('../../../../assets/images/company/frame2.png');
+        height: 50px;
+        width: 89px;
+        background-repeat: no-repeat;
+        margin-left: auto;
+    }
+
+
+}
+
+.company-decors-mob {
+    display: none;
+}
+
+@media (max-width:447px) {
+
+    .company-decors,
+    .under__decor {
+        display: none;
+    }
+
+    .company-decors-mob {
+        display: flex;
+        width: 100%;
+        height: 110px;
+        justify-content: flex-start;
+
+        &-decor {
+            background-image: url('../../../../assets/images/company/Frame-decor-mob-left.png');
+            background-repeat: no-repeat;
+            width: 194px;
+            height: 100%;
+            margin-top: -55px;
+            background-size: contain;
+        }
+        &-decorlittle {
+            background-image: url('../../../../assets/images/company/Frame-decor-mob.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 205px;
+            height: 100%;
+            transform: scale(1.05);
+        }
+    }
+
+}
+
+.under__decor {
+    position: absolute;
+
+    top: -274px;
+    right: 0;
+
+    background-image: url('../../../../assets/images/company/Frame\ 40.png');
+    width: 92px;
+    height: 275px;
+
+    background-repeat: no-repeat;
+}
+
+
+/*===========text============*/
+
+.company-title {
+    margin: 20px 150px 100px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    max-width: 510px;
+}
+
+
+.company-text {
+    border-left: 1px solid #FFFFFF;
+    max-width: 620px;
+    margin: 50px 150px;
+    padding: 0px 50px 50px 0;
+    margin-bottom: 200px;
+
+    &-title {
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 37px;
+        color: #FFFFFF;
+        padding: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #FFFFFF;
+
+    }
+}
+
+@media (max-width:1003px) {
+    .company-title {
+        margin: 53px 47px;
+
+    }
+
+    .company-text {
+        margin: 50px 45px 165px 50px;
+    }
+}
+
+@media (max-width:500px) {
+    .company-title {
+        font-size: 27px;
+        margin: 64px 25px 10px;
+    }
+
+    .company-text {
+        padding: 16px 1px 40px 0;
+        margin: 70px 14px 100px 23px;
+
+        &-title {
+            padding: 0 0 15px 15px;
+            font-size: 21px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+}
+
+/*===========logos============*/
+
+
+.company-logos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin-top: 80px;
+
+    & img {
+        width: auto;
+        height: 80px;
+    }
+}
+
+#discover-wisconsin {
+    height: 150px !important;
+}
+
+#anda {
+    height: 61px !important;
+}
+
+
+@media (max-width:1003px) {
+    .company-logos {
+        margin-top: 47px;
+    }
+
+    .company {
+        padding-bottom: 117px;
+    }
+}
+
+@media (max-width:999px) {
+    .company-logos img {
+        width: auto;
+        height: 50px;
+    }
+
+
+    .company-logos {
+        margin-top: 32px;
+        padding: 20px;
+
+        & img {
+            width: auto;
+            height: 50px;
+        }
+    }
+
+    #discover-wisconsin {
+        height: 92px !important;
+    }
+
+    #anda {
+        height: 41px !important;
+    }
+}
+
+@media (max-width:542px) {
+
+    // #discover-wisconsin {
+    //     height: 120px !important;
+    // }
+    .company-logos img {
+        height: 32px;
+    }
+
+    #discover-wisconsin {
+        height: 63px !important;
+    }
+
+    #anda {
+        height: 29px !important;
+    }
+
+}

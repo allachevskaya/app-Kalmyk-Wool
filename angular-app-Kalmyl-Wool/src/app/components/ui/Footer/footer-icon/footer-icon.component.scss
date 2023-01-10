@@ -1,0 +1,21 @@
+.footer-icons {
+   
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+@media (max-width:800px) {
+    .footer-icons a img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+@media (max-width:544px) {
+    .footer-icons{
+        justify-content: center;
+        margin-top: -195px;
+    }
+}

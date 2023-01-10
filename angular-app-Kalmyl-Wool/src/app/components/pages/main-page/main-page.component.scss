@@ -1,0 +1,21 @@
+.mainPage {
+    width: 100%;
+    min-height: 100vh;
+    height: max-content;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.273), rgba(0, 0, 0, 0.8)),
+        url('https://img.freepik.com/free-photo/lambs-looking-at-front-in-the-wooden-barn_342744-422.jpg?w=1380&t=st=1672409059~exp=1672409659~hmac=3d87c412c9a472ec7e88f16c5a78d50fab2e9d5836b84424e4a97c06064c10fa');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -0px;
+    left: 0;
+    z-index: 1s;
+}
+
+.__mainPage-container {
+    width: 100%;
+    height: max-content;
+}
+

@@ -1,0 +1,46 @@
+<header class="header">
+    <div class="header-menu">
+        <div class="header-menu-left">
+            <a class="menu-link" href="#about">О нас</a>
+            <a class="menu-link" href="#partners">Партнеры</a>
+            <a class="menu-link" href="#process">Процесс</a>
+        </div>
+    </div>
+
+    <div class="header-logo">
+        <a href="/index.html"><img src="../../../../../assets/images/logo.svg" alt="Kalmyk Wool Logo"></a>
+    </div>
+
+    <div class="header-menu">
+        <div class="header-menu-right">
+            <a class="menu-link" href="#news">Новости</a>
+            <a class="menu-link" href="#contacts">Контакты</a>
+        </div>
+        <div class="header-search">
+            <img src="../../../../../assets/images/search.svg" alt="поиск">
+        </div>
+    </div>
+  
+</header>   
+
+
+<div class="header-burger">
+    <img src="../../../../../assets/images/logo.svg" alt="Kalmyk Wool Logo" class="header-burger-logo">
+    <img 
+        src="../../../../../assets/images/menu.svg"
+        alt="меню"
+        class="header-burger-icon"
+        (click)="openMenu()"
+    >
+    
+    <div 
+        class="header-burger-menu"
+        *ngIf="toggleMenu"
+    >
+        <a class="menu-link" href="#about">О нас</a>
+        <a class="menu-link" href="#partners">Партнеры</a>
+        <a class="menu-link" href="#process">Процесс</a>
+        <a class="menu-link" href="#news">Новости</a>
+        <a class="menu-link" href="#contacts">Контакты</a>
+    </div>
+</div>

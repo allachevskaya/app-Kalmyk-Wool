@@ -1,0 +1,29 @@
+<div class="news-container __container-cards" >
+  
+        <div class="card-empy">
+            
+        </div>
+
+        <div class="card"*ngFor="let item of cards">
+            <img src="{{item.img}}" alt="img">
+            <div class="card-title">
+                {{item.title}}
+            </div>
+            <div class="card-description">
+                {{item.dectiption}}
+            </div>
+            <div class="card-date">
+                {{item.date}}
+            </div>
+            <div class="card-link">
+                <a href="">
+                    <p>Подробнее</p>
+                    <div class="card-link-arrow"></div>
+                </a>
+            </div>
+        </div>
+       
+</div>
+
+    
+

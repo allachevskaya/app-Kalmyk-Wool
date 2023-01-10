@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+/* global styles */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    outline: 0;
+}
+
+
+.wrapper {
+    width: 100%;
+    height: max-content;
+    overflow-x: hidden;
+    background-color: white;
+    font-family: 'Montserrat';
+ 
+}
+
+
+.container{
+    padding: 0px 180px;
+    
+}
+
+
+@media (max-width:1322px) {
+    .container {
+        padding: 0px 80px;
+    }
+}
+
+@media (max-width:1048px) {
+    .container {
+        padding: 0px 20px;
+    }
+}
