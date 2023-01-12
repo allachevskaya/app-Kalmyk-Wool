@@ -210,3 +210,17 @@ transition: 1s ease;
     }
     
 }
+
+
+@media (max-width:415px) {
+    .card-link-arrow::after {
+        content: ">";
+    
+        font-size: 20px;
+        color: #3D4043;
+        position: relative;
+        top: -11px;
+    left: 38px;
+    
+    }
+}

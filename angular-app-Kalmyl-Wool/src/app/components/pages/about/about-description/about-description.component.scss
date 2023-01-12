@@ -160,17 +160,6 @@
     }
 }
 
-@media (max-width:414px) {
-    
-    .about__description::before {
-        content: url('../../../../../assets/images/decor-left.png');
-        height: 130px;
-        width: 30px;
-        position: relative;
-        top: -11px;
-    left: 38px;
-    }
-}
 
 
 @media (max-width:350px) {
