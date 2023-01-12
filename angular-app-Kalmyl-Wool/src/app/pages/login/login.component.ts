@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -15,18 +15,23 @@ export class LoginComponent implements OnInit {
   userLogin?: any;
   openAdmin?:boolean;
 
+
   ngOnInit(): void {
-    this._login = 'admin'
-    this._password = '123'
-    this.openAdmin = false
+    this._login = 'admin';
+    this._password = '123';
+    this.openAdmin = false;
+
   }
-  @ViewChild('testForm') someNewNameFrom: NgForm | null = null;
+
+  @ViewChild('testForm') someFrom: NgForm | null = null;
+
   
 
+
   onSubmit() {
-    console.log(this.someNewNameFrom?.value); //получила значение из инпута
+    console.log(this.someFrom?.value); //получила значение из инпута
     //console.log(this.someNewNameFrom?.value.userLogin) // чтобы считать только значение которое заносится в userLogin
-    if(this.someNewNameFrom?.value.userLogin === this._login && this.someNewNameFrom?.value.userPassword === this._password){
+    if(this.someFrom?.value.userLogin === this._login && this.someFrom?.value.userPassword === this._password){
       this.openAdmin = true;
     }
   }

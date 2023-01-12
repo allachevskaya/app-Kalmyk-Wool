@@ -91,3 +91,16 @@ button:hover:after {
 button:hover {
   background: rgba(255, 255, 255, .2);
 }
+
+
+.admin-header{
+  display: flex;
+  justify-content: center;
+  height: 115px;
+  margin-bottom: 99px;
+  align-items: center;
+  & img{
+    width: 90px;
+    height: 90px;
+  }
+}

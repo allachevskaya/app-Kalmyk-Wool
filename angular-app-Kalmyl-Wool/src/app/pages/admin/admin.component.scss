@@ -6,7 +6,7 @@
     &__header{
         width: 100%;
         border: 1px solid red;
-        height: 90px;
+        height: 100px;
         display: flex;
         justify-content: space-between;
         &-logo{
@@ -16,14 +16,43 @@
             left: 50%;
             top:48px;
             transform: translate(-50%,-50%);
+            margin-top: 10px;
         }
         &-nav{
             display: flex;
-            align-items: flex-end;
-            gap:20px;
+            align-items: center;
+            gap:15px;
+            margin-top: 15px;
             & a{
                 color:#fff;
+                font-size: 18px;
+                font-family: "Montserrat";
+                
+            }
+            & img{
+                width: 40px;
+                height: 40px;
             }
         }
+    }
+}
+
+
+.admin__header-nav img {
+    transition: all 0.5s ease-in-out;
+    animation-duration: 3s;
+    animation: 3s linear 1s infinite alternate rotate;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: scale(0.5);
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: scale(0.5);
+        transform: rotate(360deg);
     }
 }

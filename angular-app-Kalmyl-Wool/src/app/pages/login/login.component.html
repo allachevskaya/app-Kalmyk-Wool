@@ -2,7 +2,8 @@
     <app-header></app-header>
     <div class="login-container">
         <form action=""
-        (ngSubmit)="onSubmit()" #testForm="ngForm">
+        (ngSubmit)="onSubmit()" #testForm="ngForm"
+        >
         <input
          type="text"
          placeholder="login"
@@ -22,5 +23,15 @@
 
 
 <section class="admin" *ngIf="openAdmin" >
-    <app-admin></app-admin>
+    <div class="admin-header">
+       
+            <img 
+            routerLink="/"
+             src="assets/images/logo.svg"
+              alt="logo"
+            >
+        
+    </div>
+ 
+    <app-news [toggleAdmin]="openAdmin"></app-news>
 </section>
