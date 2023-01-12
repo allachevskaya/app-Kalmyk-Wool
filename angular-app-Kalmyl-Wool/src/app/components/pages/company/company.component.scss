@@ -239,3 +239,9 @@
 .company-logos-logo:last-child{
     margin: 0;
 }
+
+@media (max-width:500px) {
+    .company-logos-logo{
+        padding: 0;
+    }
+}
