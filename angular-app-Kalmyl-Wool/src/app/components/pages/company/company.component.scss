@@ -242,3 +242,20 @@
     }
 
 }
+
+@media (max-width:340px) {
+    .company-logos{
+        gap:10px;
+        & img{
+            height: 15px;
+        }
+    }
+    #discover-wisconsin {
+        height: 35px !important;
+    }
+
+    #anda {
+        height: 15px !important;
+    }
+    
+}

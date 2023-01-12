@@ -198,3 +198,15 @@
 transform: scale(0.98);
 transition: 1s ease;
 }
+
+@media (max-width:375px) {
+    .card-link-arrow::after{
+    content: ">";
+    font-size: 16px;
+    color: #3D4043;
+    position: relative;
+    top: -9px;
+    left: 39px;
+    }
+    
+}

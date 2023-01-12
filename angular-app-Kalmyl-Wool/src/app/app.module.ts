@@ -26,7 +26,8 @@ import { NewsComponent } from './components/pages/news/news.component';
 import { NewsCardComponent } from './components/pages/news-card/news-card.component';
 import { FormComponent } from './components/pages/form/form.component';
 import { LoginComponent } from './pages/login/login.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { NoveltyComponent } from './pages/novelty/novelty.component'
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { FormsModule } from '@angular/forms'
     NewsCardComponent,
     FormComponent,
     LoginComponent,
+    NoveltyComponent,
 
   ],
   imports: [

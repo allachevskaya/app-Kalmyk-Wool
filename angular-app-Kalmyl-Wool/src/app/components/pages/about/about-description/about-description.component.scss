@@ -1,4 +1,3 @@
-
 .about__description {
 
     background: #FFFFFF;
@@ -51,9 +50,9 @@
 
 
 @media (max-width:1180px) {
-  
 
- 
+
+
 
     .about__description {
         padding: 107px 73px;
@@ -72,12 +71,12 @@
 }
 
 @media (max-width:942px) {
-  
+
     .about__description {
         top: 371px;
     }
 
-  
+
 
     .about__description {
         margin-left: 0;
@@ -97,14 +96,14 @@
         border-radius: 0;
         border: 0;
         margin-top: -156px;
-        
+
 
         & p {
             padding: 0px 50px 50px 0px;
         }
     }
 
-     .about__description::before {
+    .about__description::before {
         content: url('../../../../../assets/images/decor-right.png  ');
         height: 130px;
         width: 30px;
@@ -123,20 +122,20 @@
 
 
 @media (max-width:628px) {
- 
+
 
     .about__description p {
         line-height: 38px;
         font-size: 17px;
     }
-    
+
 }
 
 
 @media (max-width:564px) {
     .about__description {
         padding: 0px;
-       
+
         padding-bottom: 66px;
 
         & p {
@@ -162,3 +161,14 @@
 }
 
 
+
+@media (max-width:330px) {
+    .about__description::before {
+        content: url('../../../../../assets/images/decor-left.png');
+        height: 130px;
+        width: 30px;
+        position: relative;
+        top: 45px;
+        left: -12px;
+    }
+}
