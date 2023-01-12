@@ -3,7 +3,7 @@
     margin-bottom: 100px;
     background: #3D4043;
     font-family: 'Montserrat';
-    padding-bottom: 280px;
+    padding-bottom: 240px;
     position: relative;
 
 }
@@ -167,95 +167,75 @@
 
 
 .company-logos {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
     width: 100%;
     align-items: center;
     margin-top: 80px;
-
-    & img {
-        width: auto;
-        height: 80px;
-    }
-}
-
-#discover-wisconsin {
-    height: 150px !important;
-}
-
-#anda {
-    height: 61px !important;
-}
-
-
-@media (max-width:1003px) {
-    .company-logos {
-        margin-top: 47px;
-    }
-
-    .company {
-        padding-bottom: 117px;
-    }
-}
-
-@media (max-width:999px) {
-    .company-logos img {
-        width: auto;
-        height: 50px;
-    }
-
-
-    .company-logos {
-        margin-top: 32px;
-        padding: 20px;
-
-        & img {
-            width: auto;
-            height: 50px;
-        }
-    }
-
-    #discover-wisconsin {
-        height: 92px !important;
-    }
-
-    #anda {
-        height: 41px !important;
-    }
-}
-
-@media (max-width:542px) {
-
-    // #discover-wisconsin {
-    //     height: 120px !important;
-    // }
-    .company-logos img {
-        height: 32px;
-    }
-
-    #discover-wisconsin {
-        height: 63px !important;
-    }
-
-    #anda {
-        height: 29px !important;
-    }
-
-}
-
-@media (max-width:340px) {
-    .company-logos{
-        gap:10px;
+    
+    &-logo{
+        // border: 1px solid red;
+        max-width: 850px;
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        margin-bottom: 50px;;
+        gap:50px;
+        align-items: center;
+        float: right;
+        
         & img{
-            height: 15px;
+            height: auto;
+            width: 120px;
         }
-    }
-    #discover-wisconsin {
-        height: 35px !important;
-    }
-
-    #anda {
-        height: 15px !important;
+        & p{
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 33px;
+            color: #FFFFFF;
+        }
     }
     
+}
+
+#begleprom{
+    height: auto;
+    width: 105px;
+
+}
+
+@media (max-width: 1043px) {
+    .company-logos-logo{
+        float: left;
+        padding: 0 40px;
+        gap:20px;
+        & img{
+            width: 100px;
+        }
+    }
+    #begleprom{
+        width: 80px;
+    }
+}
+
+@media (max-width:600px) {
+    .company-logos{
+        display: flex;
+        flex-direction: column;
+        &-logo{
+            display: flex;
+            flex-direction: column;
+            gap:23px;
+            
+            & p{
+                font-size: 19px;
+            }
+        }
+    }
+    #begleprom{
+        width: 60px;
+    }
+}
+
+.company-logos-logo:last-child{
+    margin: 0;
 }
