@@ -55,7 +55,7 @@
 
 @media (max-width:500px) {
     .about-blur{
-        height: 77px;
+        height: 148px;
     }
 }
 
@@ -67,8 +67,9 @@
         position: relative;
     }
     .about-blur{
-        height: 35px;
+        height: 62px;
         position: absolute;
-        top:-20px;
+        /* bottom: -6px; */
+        top: -57px;
     }
 }
