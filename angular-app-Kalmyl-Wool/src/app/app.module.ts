@@ -28,7 +28,11 @@ import { FormComponent } from './components/pages/form/form.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { NoveltyComponent } from './pages/novelty/novelty.component';
-import { AddArticleComponent } from './components/add-article/add-article.component'
+import { AddArticleComponent } from './components/add-article/add-article.component';
+import { StaffComponent } from './pages/staff/staff.component';
+import { AssortmentComponent } from './pages/assortment/assortment.component';
+import { AssortmentItemComponent } from './components/assortment-item/assortment-item.component';
+import { StaffCardComponent } from './components/staff-card/staff-card.component'
 
 @NgModule({
   declarations: [
@@ -56,6 +60,10 @@ import { AddArticleComponent } from './components/add-article/add-article.compon
     LoginComponent,
     NoveltyComponent,
     AddArticleComponent,
+    StaffComponent,
+    AssortmentComponent,
+    AssortmentItemComponent,
+    StaffCardComponent,
 
   ],
   imports: [
