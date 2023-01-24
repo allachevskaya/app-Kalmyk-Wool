@@ -33,7 +33,8 @@ import { StaffComponent } from './pages/staff/staff.component';
 import { AssortmentComponent } from './pages/assortment/assortment.component';
 import { AssortmentItemComponent } from './components/assortment-item/assortment-item.component';
 import { StaffCardComponent } from './components/staff-card/staff-card.component';
-import { AssortmentCardComponent } from './components/assortment-card/assortment-card.component'
+import { AssortmentCardComponent } from './components/assortment-card/assortment-card.component';
+import { AssortmentDetailedComponent } from './pages/assortment-detailed/assortment-detailed.component'
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { AssortmentCardComponent } from './components/assortment-card/assortment
     AssortmentItemComponent,
     StaffCardComponent,
     AssortmentCardComponent,
+    AssortmentDetailedComponent,
 
   ],
   imports: [

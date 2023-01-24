@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AssortmentItemComponent } from './components/assortment-item/assortment-item.component';
 import { AdminComponent } from './pages/admin/admin.component';
+import { AssortmentDetailedComponent } from './pages/assortment-detailed/assortment-detailed.component';
 import { AssortmentComponent } from './pages/assortment/assortment.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MainComponent } from './pages/main/main.component';
@@ -15,6 +17,7 @@ const routes: Routes = [
   {path:'novelty', component:NoveltyComponent},
   {path:'staff', component:StaffComponent},
   {path:'assortment', component:AssortmentComponent},
+  {path:'detailed', component:AssortmentDetailedComponent},
   { path: '**', component: NotFoundComponent },
   
 ];
