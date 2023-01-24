@@ -32,7 +32,8 @@ import { AddArticleComponent } from './components/add-article/add-article.compon
 import { StaffComponent } from './pages/staff/staff.component';
 import { AssortmentComponent } from './pages/assortment/assortment.component';
 import { AssortmentItemComponent } from './components/assortment-item/assortment-item.component';
-import { StaffCardComponent } from './components/staff-card/staff-card.component'
+import { StaffCardComponent } from './components/staff-card/staff-card.component';
+import { AssortmentCardComponent } from './components/assortment-card/assortment-card.component'
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { StaffCardComponent } from './components/staff-card/staff-card.component
     AssortmentComponent,
     AssortmentItemComponent,
     StaffCardComponent,
+    AssortmentCardComponent,
 
   ],
   imports: [

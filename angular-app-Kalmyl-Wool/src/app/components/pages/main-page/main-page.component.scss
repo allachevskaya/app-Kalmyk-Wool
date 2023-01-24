@@ -19,9 +19,15 @@
     height: max-content;
 }
 
+.main-blur{
+    display: none;
+}
 
-@media (max-width:400px) {
+@media (max-width:500px) {
     .mainPage{
-        height: 600px;
+       min-height: 711px;
+    }
+    .main-blur{
+        display: block;
     }
 }

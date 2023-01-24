@@ -50,14 +50,13 @@
         font-size: 25.4595px;
     line-height: 45px;
     }
-}
-
-
-@media (max-width:500px) {
     .about-blur{
-        height: 148px;
+        display: none;
     }
 }
+
+
+
 
 
 @media (max-width:400px) {
@@ -66,10 +65,5 @@
      
         position: relative;
     }
-    .about-blur{
-        height: 62px;
-        position: absolute;
-        /* bottom: -6px; */
-        top: -57px;
-    }
+    
 }

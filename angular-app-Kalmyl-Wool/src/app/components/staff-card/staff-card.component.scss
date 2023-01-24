@@ -9,7 +9,7 @@
         "img  text "
         "img  . "
         ". . ";
-    padding: 150px 0 100px;
+    padding: 80px 0;
     gap: 30px;
 
     & img {
@@ -89,7 +89,7 @@
 @media (max-width:677px) {
     .staff-card {
         grid-template-columns: minmax(100px, 150px) minmax(auto, 550px);
-        padding: 80px 0 80px;
+        padding: 40px 0;
 
         &-text {
             & h4 {
@@ -109,7 +109,7 @@
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:420px) {
     .staff-card {
         gap: 10px;
 
@@ -128,9 +128,25 @@
 
             &-decor {
                 top: -39px;
-                width: 56px;
+                width: 46px;
 
             }
+        }
+    }
+}
+
+@media (max-width:340px) {
+    .staff-card-text{
+        & h4{
+            font-size: 15px;
+            line-height: 20px;
+        }
+        & p{
+            font-size: 10px;
+            line-height: 15px;
+        }
+        &-decor{
+            width: 46px;
         }
     }
 }

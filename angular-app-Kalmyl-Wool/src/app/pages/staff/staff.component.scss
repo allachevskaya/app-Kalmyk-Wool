@@ -1,10 +1,51 @@
-.staff{
+.staff {
     background-color: #3D4043;
     width: 100%;
     height: max-content;
-    &-container{
+
+    &-container {
         background-color: white;
         margin-top: 40px;
-        
+
+        &-title {
+            text-align: center;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 49px;
+            
+            padding: 100px 0;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+
+            color: #3D4043;
+        }
+    }
+
+}
+
+@media (max-width: 853px) {
+    .staff{
+        &-container-title{
+            padding: 40px 0;
+        }
+    }
+}
+
+
+@media (max-width: 677px) {
+    .staff-container-title{
+        letter-spacing: 0.03em;
+        padding: 27px 0;
+        font-size: 27px;
+    }
+}
+
+@media (max-width:450px) {
+    .staff-container-title{
+        letter-spacing: 0.03em;
+        padding: 27px 0;
+        font-size: 21px;
     }
 }

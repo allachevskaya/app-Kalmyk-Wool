@@ -11,19 +11,20 @@
     transform: scale(0.94);
 }
 
-.footer-nav{
+.footer-nav {
     display: flex;
     justify-content: space-between;
-    gap:25px;
-    &-box{
+    gap: 25px;
+
+    &-box {
         display: flex;
         flex-direction: column;
-        gap:30px;
+        gap: 30px;
     }
 }
 
 @media (max-width:800px) {
-    .menu-link{
+    .menu-link {
         font-size: 18px;
     }
 }
@@ -31,14 +32,30 @@
 
 
 @media (max-width:544px) {
-    .footer-nav-box{
-        gap:13px;
+    .footer-nav-box {
+        gap: 13px;
     }
 }
 
 
-.__footer-menu-link{
+.__footer-menu-link {
     border: 1px solid rgba(255, 0, 0, 0);
     min-width: 107px;
     line-height: 26px;
+}
+
+
+@media (max-width:340px) {
+    .footer-nav {
+        gap: 15px;
+    }
+
+
+    .__footer-menu-link {
+        min-width: 81px;
+        font-size: 13px;
+        line-height: 18px;
+
+
+    }
 }

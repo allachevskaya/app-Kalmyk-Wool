@@ -91,3 +91,19 @@
     }
 }
 
+
+
+@media (max-width:450px) {
+    .footer{
+    &-title {
+        font-size: 18px;
+        line-height: 33px;
+    }
+    &-subtitle{
+        font-size: 15px;
+        & p{
+            line-height: 22px;
+        }
+    }
+}
+}

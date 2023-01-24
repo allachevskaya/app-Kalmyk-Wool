@@ -1,0 +1,198 @@
+.assortment-cards {
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-bottom: 80px;
+
+
+    &-card {
+        display: flex;
+
+        gap: 50px;
+        padding-bottom: 40px;
+        align-items: center;
+        justify-content: space-evenly;
+
+        & img {
+            width: 100%;
+            min-width: 287px;
+            max-width: 612px;
+
+        }
+
+        &-content {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: 'Montserrat';
+            font-style: normal;
+            gap: 20px;
+            // min-width: 173px;
+            max-width: 550px;
+
+            &-title {
+
+
+                & h4 {
+
+                    font-weight: 600;
+                    font-size: 40px;
+                    line-height: 49px;
+                    /* identical to box height */
+
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+
+                    color: #3D4043;
+                }
+
+            }
+
+            &-description {
+
+
+                & p {
+
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 30px;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                }
+            }
+
+            & button {
+                background: #88C7E1;
+                width: 250px;
+                max-height: 56px;
+                outline: none !important;
+                border: 1px solid #6093a965;
+                animation-name: rotate;
+                animation-duration: 1.2s;
+                transition: all ease-in-out;
+                animation-iteration-count: infinite;
+
+                & p {
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 21px;
+                    line-height: 30px;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    padding: 10px;
+                    color: #FFFFFF
+                }
+            }
+
+        }
+    }
+
+}
+
+.assortment-cards-card:nth-child(2n) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+
+
+
+@media (max-width:1337px) {
+    .assortment-cards-card-content {
+        &-title h4 {
+            font-size: 29px;
+            line-height: 38px;
+        }
+
+        &-description p {
+            font-size: 18px;
+        }
+
+        & button p {
+            font-size: 17px;
+        }
+    }
+}
+
+
+@media (max-width:983px) {
+    .assortment-cards-card {
+        gap: 16px;
+
+        &-content {
+            &-description p {
+                line-height: 25px;
+                font-size: 15px;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:700px) {
+    .assortment-cards-card-content {
+        gap: 3px;
+
+        &-title h4 {
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        &-description p {
+            line-height: 19px;
+            font-size: 10px;
+        }
+
+        & button {
+            width: 140px;
+
+            & p {
+                font-size: 11px;
+                padding: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width:560px) {
+    .assortment-cards {
+        gap: 41px;
+        padding-bottom: 40px;
+
+        &-card {
+            display: flex;
+            flex-direction: column;
+
+            &-content {
+                gap: 15px;
+                padding: 0 10px;
+
+                & button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .assortment-cards-card:nth-child(2n) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@keyframes rotate {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

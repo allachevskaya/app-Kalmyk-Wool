@@ -1,0 +1,33 @@
+.assortment{
+    width: 100%;
+    background-color: #3D4043;
+    width: 100%;
+    height: max-content;
+    &-container {
+        background-color: white;
+        margin-top: 40px;
+
+        &-title {
+            text-align: center;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 49px;
+            
+            padding: 100px 0;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+
+            color: #3D4043;
+        }
+    }
+}
+
+
+@media (max-width:900px) {
+    .assortment-container-title{
+        padding: 44px 0;
+        font-size: 37px;
+    }
+}
