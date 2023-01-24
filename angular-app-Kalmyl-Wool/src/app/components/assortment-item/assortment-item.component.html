@@ -1,46 +1,48 @@
 <section class="assortmentItems">
     <div class="assortmentItems-item" *ngFor="let item of assortmentDetailed">
-        <h5>{{item.title}}</h5>
-        <div class="assortmentItems-item-slider">
-            <div class="assortmentItems-item-slider-arrow">
-                <img id="arrow-left" src="assets/images/arrow-left-blue.png" alt="">
-            </div>
-            <div class="assortmentItems-item-slider-slide">
-                <img src={{item.img[0]}} alt="img">
-                <img src={{item.img[1]}} alt="img">
-            </div>
-           
+       <h5>{{item.title}}</h5>
+       <div class="assortmentItems-item-slider">
+          <div class="assortmentItems-item-slider-slide" *ngIf="flag">
+             <img src={{item.img[0]}} alt="img">
+             <img src={{item.img[1]}} alt="img">
+          </div>
 
-            <div class="assortmentItems-item-slider-arrow">
-                <img id="arrow-right" src="assets/images/arrow-right-blue.png" alt="">
-            </div>
-        </div>
+          <div class="assortmentItems-OpenSlider" *ngIf="!flag">
+             <div  *ngFor="let img of item.img; let i = index"
+                >
+                <img src={{item.img[i]}} alt="img">
+             </div>
+          </div>
 
-        <div class="assortmentItems-item-content">
-            <p>Brand</p>
-            <p>{{item.Brand}}</p>
-            <p>Place of Origin</p>
-            <p>{{item.PlaceOfOrigin}}</p>
-            <p>Weight (kg)</p>
-            <p>{{item.Weight}}</p>
-            <p>Unit Type</p>
-            <p>{{item.UnitType}}</p>
-            <p>FOB price 1 (USD)</p>
-            <p>{{item.FOBPrice}}</p>
-            <p>MOQ 1</p>
-            <p>{{item.MOQ}}</p>
-            <p>Processing Time</p>
-            <p>{{item.ProcessingTime}}</p>
-            <p>Port</p>
-            <p>{{item.Port}}</p>
-            <p>Packaging Details</p>
-            <p>{{item.PackagingDetails}}</p>
-            <p>Amount</p>
-            <p>{{item.Amount}}</p>
-            <p>Unit</p>
-            <p>{{item.Unit}}</p>
-            <p>Time</p>
-            <p>{{item.Time}}</p>
-        </div>
+          <button (click)="openIMG()" class="assortmentItems-item-slider-showImg">
+             <p>{{titleBtn}}</p>
+          </button>
+       </div>
+       <div class="assortmentItems-item-content">
+          <p>Brand</p>
+          <p>{{item.Brand}}</p>
+          <p>Place of Origin</p>
+          <p>{{item.PlaceOfOrigin}}</p>
+          <p>Weight (kg)</p>
+          <p>{{item.Weight}}</p>
+          <p>Unit Type</p>
+          <p>{{item.UnitType}}</p>
+          <p>FOB price 1 (USD)</p>
+          <p>{{item.FOBPrice}}</p>
+          <p>MOQ 1</p>
+          <p>{{item.MOQ}}</p>
+          <p>Processing Time</p>
+          <p>{{item.ProcessingTime}}</p>
+          <p>Port</p>
+          <p>{{item.Port}}</p>
+          <p>Packaging Details</p>
+          <p>{{item.PackagingDetails}}</p>
+          <p>Amount</p>
+          <p>{{item.Amount}}</p>
+          <p>Unit</p>
+          <p>{{item.Unit}}</p>
+          <p>Time</p>
+          <p>{{item.Time}}</p>
+       </div>
     </div>
-</section>
+ </section>
