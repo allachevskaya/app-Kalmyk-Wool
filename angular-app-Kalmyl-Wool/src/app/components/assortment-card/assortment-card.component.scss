@@ -71,7 +71,7 @@
                 outline: none !important;
                 border: 1px solid #6093a965;
                 animation-name: rotate;
-                animation-duration: 1.2s;
+                animation-duration: 1.6s;
                 transition: all ease-in-out;
                 animation-iteration-count: infinite;
 
@@ -189,7 +189,7 @@
 
 @keyframes rotate {
     0% {
-        transform: scale(0.8);
+        transform: scale(0.90);
     }
 
     100% {
