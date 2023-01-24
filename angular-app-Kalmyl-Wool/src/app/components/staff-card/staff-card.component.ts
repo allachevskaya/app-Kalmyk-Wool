@@ -9,12 +9,12 @@ export class StaffCardComponent {
 
   staff = [
     {
-      'img': './src/assets/images/staff/Гахаев Юрий Лиджиевич.png',
+      'img': '../assets/images/staff/Гахаев Юрий Лиджиевич.png',
       'name': 'Гахаев Юрий Лиджиевич',
       'position': 'Главный бухгалтер'
     },
     {
-      'img': './src/assets/images/staff/Гахаев Юрий Лиджиевич.png',
+      'img': '../assets/images/staff/Гахаев Юрий Лиджиевич.png',
       'name': 'Гахаев Юрий Лиджиевич',
       'position': 'Главный бухгалтер12'
 

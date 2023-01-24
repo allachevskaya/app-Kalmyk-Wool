@@ -1,6 +1,136 @@
-.staff-card{
-    border: 1px solid red;
-    max-width: 600px;
+.staff-card {
+
+    width: 100%;
     display: grid;
-    
+    grid-template-columns: minmax(199px, 280px) minmax(403px, 550px);
+    grid-template-rows: 100px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "img  text "
+        "img  . "
+        ". . ";
+    padding: 150px 0 100px;
+    gap: 30px;
+
+    & img {
+        grid-area: img;
+
+        width: 100%;
+
+    }
+
+    &-text {
+        grid-area: text;
+        border-left: 0.290625px solid #3D4043;
+        // width: 100%;
+        height: max-content;
+
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat';
+        font-style: normal;
+        gap: 10px;
+        position: relative;
+
+        & h4 {
+
+            font-weight: 600;
+            font-size: calc(60px * 0.5);
+            line-height: 49px;
+            border-bottom: 0.290625px solid #3D4043;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding-left: 10px;
+            color: #3D4043;
+        }
+
+        & p {
+            font-weight: 300;
+            padding-left: 10px;
+            font-size: 23px;
+            line-height: 30px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+
+        }
+
+        &-decor {
+            position: absolute;
+            width: 100px;
+            right: -15px;
+            top: -60px;
+
+            & img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:853px) {
+    .staff-card {
+        gap: 20px;
+
+        &-text {
+            & h4 {
+                letter-spacing: 0.05em;
+                font-size: 24px;
+            }
+
+            & p {
+                font-size: 19px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width:677px) {
+    .staff-card {
+        grid-template-columns: minmax(100px, 150px) minmax(auto, 550px);
+        padding: 80px 0 80px;
+
+        &-text {
+            & h4 {
+                line-height: 32px;
+                font-size: 20px;
+            }
+
+            & p {
+                font-size: 15px;
+                line-height: 21px;
+            }
+
+            &-decor {
+                width: 80px;
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .staff-card {
+        gap: 10px;
+
+        &-text {
+            & h4 {
+                line-height: 28px;
+                font-size: 16px;
+                letter-spacing: 0.01em;
+            }
+
+            & p {
+                font-size: 11px;
+                line-height: 18px;
+                letter-spacing: 0.01em;
+            }
+
+            &-decor {
+                top: -39px;
+                width: 56px;
+
+            }
+        }
+    }
 }
