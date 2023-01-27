@@ -156,71 +156,16 @@
         }
     }
 
-    .card-link-arrow {
-        width: 60px;
+  
 
-        height: 1px;
-        background-color: #3D4043
-    }
 
-    .card-link-arrow::after {
-        content: ">";
-
-        font-size: 22px;
-        color: #3D4043;
-        position: relative;
-        top: -12px;
-        left: 26px;
-
-    }
 }
 
 
-.card-link-arrow {
-    width: 83px;
-    margin-right: 10px;
-    height: 1px;
-    background-color: #3D4043
-}
 
-.card-link-arrow::after {
-    content: ">";
 
-    font-size: 20px;
-    color: #3D4043;
-    position: relative;
-    top: -10px;
-    left: 39px;
-
-}
 
 .card:hover{
 transform: scale(0.98);
 transition: 1s ease;
-}
-
-@media (max-width:375px) {
-    .card-link-arrow::after{
-    content: ">";
-    font-size: 16px;
-    color: #3D4043;
-    position: relative;
-    top: -9px;
-    left: 39px;
-    }
-    
-}
-
-
-@media (max-width:415px) {
-    .card-link-arrow::after {
-        content: ">";
-    
-        font-size: 20px;
-        color: #3D4043;
-        position: relative;
-        top: -11px;
-    left: 38px;
-    
-    }
 }

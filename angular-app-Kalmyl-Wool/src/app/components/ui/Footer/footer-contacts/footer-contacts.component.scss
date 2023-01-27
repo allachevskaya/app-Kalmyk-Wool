@@ -8,6 +8,7 @@
         font-size: 21px;
         line-height: 33px;
         text-align: end;
+        cursor: pointer;
     }
 }
 
@@ -18,7 +19,7 @@
 }
 
 
-@media (max-width:544px) {
+@media (max-width:784px) {
     .footer-contacts{
         display: none;
     }

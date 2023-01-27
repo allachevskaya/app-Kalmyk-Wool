@@ -10,11 +10,10 @@
 
 a {
     text-decoration: none;
-}
-
-a {
+    cursor: pointer !important;
     outline: 0;
 }
+
 
 
 .wrapper {
@@ -29,7 +28,7 @@ a {
 
 
 .container{
-    padding: 0px 180px;
+    padding: 0px 100px;
     
     
     
@@ -38,7 +37,7 @@ a {
 
 @media (max-width:1322px) {
     .container {
-        padding: 0px 80px;
+        padding: 0px 40px;
     }
 }
 

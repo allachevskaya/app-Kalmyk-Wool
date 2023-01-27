@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-sub-description.component.scss']
 })
 export class AboutSubDescriptionComponent {
-
+  value = true
 }

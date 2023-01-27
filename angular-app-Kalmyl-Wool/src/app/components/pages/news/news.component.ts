@@ -7,13 +7,16 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
 })
 export class NewsComponent implements  OnChanges {
 
-
   @Input() toggleAdmin: boolean = false; 
 
-  
+
+
+
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.toggleAdmin)
+    console.log(this.toggleAdmin);
+    
+
   }
 
   

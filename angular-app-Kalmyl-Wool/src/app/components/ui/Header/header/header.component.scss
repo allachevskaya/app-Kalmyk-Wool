@@ -4,9 +4,10 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 0 180px;
+    padding: 0 100px;
     position: relative;
     z-index: 5;
+    gap: 33px;
 
     &-menu {
         display: flex;
@@ -16,14 +17,10 @@
         &-left,
         &-right {
             display: flex;
-            gap: 65px;
-
+            gap: 30px;
         }
 
-        &-search img {
-            width: 30px;
-            height: 30px;
-        }
+
     }
 
     &-burger {
@@ -48,7 +45,11 @@
 
 @media (max-width:1322px) {
     .header {
-        padding: 0 80px;
+        padding: 0 40px;
+    }
+
+    .menu-link {
+        font-size: 17px;
     }
 }
 
@@ -61,7 +62,9 @@
 
             &-left,
             &-right {
-                gap: 25px;
+                flex-wrap: wrap;
+                gap: 15px;
+                justify-content: center;
             }
         }
     }
@@ -85,6 +88,7 @@
         position: relative;
         z-index: 10;
         top: -84px;
+        gap: 18px;
 
         &-logo {
             position: absolute;
@@ -110,13 +114,18 @@
             gap: 28px;
             padding: 10px;
             width: 100%;
-            // background-color: rgba(245, 245, 245, 0.2156862745);
             justify-content: center;
             flex-wrap: wrap;
             position: relative;
             top: 84px;
 
         }
+
+    }
+
+    .menu-link {
+        border-bottom: 1px solid #ffffff8f;
+        font-size: 21px;
     }
 }
 
@@ -141,11 +150,13 @@
 @media (max-width:410px) {
     .header-burger-menu {
 
-        gap: 36px;
+        gap: 19px;
         top: 84px;
+
     }
 
     .menu-link {
         font-size: 19px;
+
     }
 }

@@ -55,16 +55,18 @@
             display: flex;
             flex-direction: column;
             gap: 6px;
-            width: 100%;
+            width: max-content;
             color: #3D4043;
             margin-top: 60px;
+            border: 1px solid #3D4043;
 
             & p {
                 text-align: start;
                 font-weight: 300;
-                font-size: 28px;
-                line-height: 44px;
+                font-size: 21px;
+                line-height: 33px;
                 width: 100%;
+                padding: 5px 17px;
 
             }
 
@@ -130,14 +132,7 @@ input::placeholder {
         width: 300px;
     }
 
-    .form__container-content form a p {
-        font-size: 24px;
-    }
 
-    .form__container-content form a {
-
-        margin-top: 16px;
-    }
 }
 
 .form-contacts {
@@ -145,88 +140,35 @@ input::placeholder {
 }
 
 @media (max-width:818px) {
-    .form__container-content-contact {
-        display: none;
-    }
-
-    .form__container-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .form__container-content form input {
-        width: 500px;
-    }
-
-    .form__container-content form a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .form__container-content form a p {
-        text-align: center;
-        font-family: 'Montserrat';
-    }
-
-    .form__container {
-        padding: 55px;
-
-        &-content {
-            margin: 50px 0;
-        }
-    }
-
-    .form-contacts {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-
-
-        width: 100%;
-        padding: 67px 30px;
-        align-items: center;
-        justify-content: center;
-        margin-top: 142px;
-        gap: 50px;
-
-        & p {
-            max-width: 400px;
-            font-weight: 400;
-            font-size: 21px;
-            line-height: 28px;
-            text-align: center;
-            color: #3D4043;
-
-        }
-
-        & a {
-            font-weight: 400;
-            font-size: 21px;
-            line-height: 28px;
-            text-align: center;
-
-            color: #3D4043;
-        }
-    }
-
     .form {
-        padding-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            border-radius: 20px;
+            width: 564px;
+            gap: 40px;
+
+            &-title {
+                font-size: 28px;
+            }
+
+            &-content {
+                display: flex;
+                justify-content: center;
+                margin: 0;
+
+                &-contact {
+                    display: none;
+                }
+            }
+        }
     }
-
-
-    .form__container {
-        border-radius: 36px;
-        margin: 20px;
-        padding: 40px;
-    }
-
-    .form__container-content form input {
-        width: 100%;
-    }
-
-
 }
 
 @media (max-width:500px) {
@@ -237,44 +179,59 @@ input::placeholder {
         gap: 30px;
     }
 
-    .form__container-content form {
-        display: flex;
-        flex-direction: column;
-        gap: 44px;
+
+
+
+    .form__container {
+        padding: 31px;
+
+        &-title {
+            font-size: 25px;
+            line-height: 28px;
+            padding-top: 50px;
+            max-width: 139px;
+            text-align: center;
+
+        }
+
+        &-content form {
+            display: flex;
+            flex-direction: column;
+            gap: 44px;
+
+            & input {
+                font-size: 7px;
+                padding: 15px 0;
+            }
+
+            & a {
+                margin-top: 20px;
+
+                p {
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+            }
+        }
     }
 
-    .footer-container-nav-box a {
-        text-align: center;
-    }
 
-    .form__container-title {
-        font-size: 25px;
-        line-height: 21px;
-        padding-top: 50px;
-    }
-
-    .form__container-content form input {
-        padding: 15px;
-    }
-
-    .form__container-content form a p {
-        font-size: 19px;
-    }
 }
 
-.form-arrow{
-    width: 300px;
-    height: 1px;
-    background-color: #3D4043;
-}
+@media (max-width:340px) {
+    .form__container {
+        padding: 24px;
 
-.form-arrow::after{
-    content: ">";
-    font-size: 30;
-    width: 300px;
-    height: 1px;
-    color: #3D4043;
-    position: relative;
-    top: -7px;
-    right: -293px;
+        &-content {
+            & form {
+                & input {
+                    width: 250px;
+                }
+
+                & a {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
 }
