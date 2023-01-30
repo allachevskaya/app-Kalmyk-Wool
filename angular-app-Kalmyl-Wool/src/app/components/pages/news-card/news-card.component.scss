@@ -25,14 +25,18 @@
 
 .card {
     border-right: 1px solid #3D4043;
-    height: max-content;
-    min-height: 500px;
-    width: 300px;
-    border-radius: 40px 0 0 0;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 15px;
+    // height: max-content;
+    // min-height: 500px;
+    // width: 300px;
+    // border-radius: 40px 0 0 0;
+    // display: flex;
+    // justify-content: space-between;
+    // flex-direction: column;
+    // gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 270px auto auto;
+    gap:15px;
     margin-left: 20px;
 
 
@@ -40,7 +44,7 @@
     & img {
         width: 100%;
         height: auto;
-        max-width: 320px;
+        // max-width: 320px;
         border-radius: 40px 0 0 0;
     }
 
@@ -49,6 +53,7 @@
         font-size: 21px;
         line-height: 28px;
         color: #EDC147;
+        
     }
 
     &-description {
@@ -96,43 +101,43 @@
 
 @media (max-width: 900px) {
 
-    .news-container {
-        margin-right: 23px;
-    }
+    // .news-container {
+    //     margin-right: 23px;
+    // }
 
-    .__container-cards {
-        margin-top: 0;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
+    // .__container-cards {
+    //     margin-top: 0;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     padding: 20px;
+    // }
 
-    .card {
-        margin: 0;
-        flex: 1 1 auto;
-    }
+    // .card {
+    //     margin: 0;
+    //     flex: 1 1 auto;
+    // }
 
-    .card-empy {
-        display: none;
-    }
+    // .card-empy {
+    //     display: none;
+    // }
 }
 
 
-@media (max-width:762px) {
-    .card {
-        width: 250px;
+// @media (max-width:762px) {
+//     .card {
+//         width: 250px;
 
-        &-description {
-            font-size: 15px;
-        }
+//         &-description {
+//             font-size: 15px;
+//         }
 
-    }
+//     }
 
-    .card-link p {
-        font-size: 13px;
-    }
+//     .card-link p {
+//         font-size: 13px;
+//     }
 
-}
+// }
 
 @media (max-width:600px) {
     .__container-cards {
@@ -154,8 +159,12 @@
         &-description {
             font-size: 18px;
         }
+       
     }
 
+    .card-empy{
+        display: none;
+    }
   
 
 
