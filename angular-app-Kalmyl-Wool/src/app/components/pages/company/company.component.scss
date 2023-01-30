@@ -71,6 +71,7 @@
             margin-top: -55px;
             background-size: contain;
         }
+
         &-decorlittle {
             background-image: url('../../../../assets/images/company/Frame-decor-mob.png');
             background-repeat: no-repeat;
@@ -172,76 +173,167 @@
     width: 100%;
     align-items: center;
     margin-top: 80px;
-    
-    &-logo{
+
+    &-logo {
         // border: 1px solid red;
         max-width: 850px;
         display: grid;
         grid-template-columns: 130px 1fr;
-        margin-bottom: 50px;;
-        gap:50px;
+        margin-bottom: 50px;
+        ;
+        gap: 50px;
         align-items: center;
         float: right;
-        
-        & img{
+
+        & img {
             height: auto;
             width: 120px;
         }
-        & p{
+
+        & p {
             font-weight: 300;
             font-size: 22px;
             line-height: 33px;
             color: #FFFFFF;
         }
     }
-    
+
 }
 
-#begleprom{
+#begleprom {
     height: auto;
     width: 105px;
 
 }
 
 @media (max-width: 1043px) {
-    .company-logos-logo{
+    .company-logos-logo {
         float: left;
         padding: 0 40px;
-        gap:20px;
-        & img{
+        gap: 20px;
+
+        & img {
             width: 100px;
         }
     }
-    #begleprom{
+
+    #begleprom {
         width: 80px;
     }
 }
 
 @media (max-width:600px) {
-    .company-logos{
+    .company-logos {
         display: flex;
         flex-direction: column;
-        &-logo{
+
+        &-logo {
             display: flex;
             flex-direction: column;
-            gap:23px;
-            
-            & p{
+            gap: 23px;
+
+            & p {
                 font-size: 19px;
             }
         }
     }
-    #begleprom{
+
+    #begleprom {
         width: 60px;
     }
 }
 
-.company-logos-logo:last-child{
+.company-logos-logo:last-child {
     margin: 0;
 }
 
 @media (max-width:500px) {
-    .company-logos-logo{
+    .company-logos-logo {
         padding: 0;
+    }
+}
+
+
+/*======diploma=====*/
+
+
+.company-diploma {
+    
+    height: max-content;
+    width: 100%;
+    padding-top: 80px;
+
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 184px 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "title ."
+        "item item";
+
+    &-title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        max-width: 510px;
+        margin: 20px 150px 100px;
+        grid-area: title;
+    }
+
+    &-item {
+        grid-area: item;
+     
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px, 500px));
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 0 20px;
+
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:1104px) {
+    .company-diploma {
+        padding: 20px 0;
+
+        &-title {
+            margin: 53px 47px;
+        }
+
+        &-item {
+            & img {}
+        }
+    }
+}
+
+
+@media (max-width:542px) {
+    .company {
+        padding-bottom: 108px;
+        
+        &-diploma {
+            grid-template-rows: 135px 1fr;
+            padding-top: 40px;
+            
+            &-title {
+                font-size: 30px;
+                line-height: 36px;
+                margin: 21px 47px;
+                width: 100%;
+            }
+            &-item{
+                gap: 45px;
+                grid-template-columns: repeat(auto-fill,186px);
+            }
+        }
+
+
     }
 }
