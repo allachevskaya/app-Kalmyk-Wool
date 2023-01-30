@@ -1,6 +1,7 @@
 .news{
     width: 100%;
     height: max-content;
+    margin-bottom: 180px;
     &-container{
         margin-right: 200px;
        
@@ -66,6 +67,9 @@
 }
 
 @media (max-width:568px) {
+    .news{
+        margin-bottom: 80px;
+    }
     .news__decor img{
         display: none;
     }
