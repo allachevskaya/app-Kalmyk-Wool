@@ -1,0 +1,14 @@
+<section class="aboutNewConent" >
+    <div class="aboutNewConent-box" *ngFor="let item of content">
+        
+            <div class="aboutNewConent-box-decor">
+                <img src={{item.decor}} alt="decor">
+            </div>
+            
+           <div class="aboutNewConent-box-text">
+            <p>{{item.text}}</p>
+           </div>
+        
+        
+    </div>
+</section>

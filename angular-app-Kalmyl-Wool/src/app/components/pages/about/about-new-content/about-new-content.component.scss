@@ -1,0 +1,121 @@
+.aboutNewConent {
+    margin-top: 160px;
+    width: 100%;
+    display: flex;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 500px));
+    gap: 80px 20px;
+    grid-template-rows: 1fr;
+    justify-content: center;
+
+
+    &-box {
+        position: relative;
+
+        border-radius: 25px;
+        border: 1px solid #787878;
+
+        &-decor {
+            position: absolute;
+            top: -30px;
+            left: -21px;
+            width: 60px;
+            height: 60px;
+
+            & img {
+                width: 100%;
+                transition: all 0.5s ease-in-out;
+                animation-duration: 3s;
+                animation: 3s linear 1s infinite alternate rotate;
+            }
+        }
+
+        &-text {
+            padding: 20px;
+
+            & p {
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 41px;
+                text-align: center;
+                color: #3D4043
+            }
+        }
+
+    }
+
+}
+
+
+
+
+@keyframes rotate {
+    from {
+        transform: scale(0.5);
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: scale(0.5);
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width: 1180px) {
+    .aboutNewConent {
+        gap: 40px 20px;
+
+        &-box {
+            &-text {
+                & p {
+                    font-size: 19px;
+                    line-height: 33px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (786px <=width <=943px) {
+    .aboutNewConent {
+        margin-top: 434px;
+    }
+}
+
+@media (max-width:785px) {
+    .aboutNewConent {
+        margin: 0 0 50px;
+    }
+}
+
+@media (max-width:516px) {
+    .aboutNewConent {
+        gap: 40px 20px;
+        display: flex;
+        flex-direction: column;
+
+        &-box {
+            &-text {
+                & p {
+                    line-height: 28px;
+                    font-size: 17px;
+                }
+            }
+            &-decor{
+                width: 35px;
+                height: 35px;
+                top: -12px;
+                left: -8px;
+                & img{
+
+                }
+            }
+        }
+    }
+}
