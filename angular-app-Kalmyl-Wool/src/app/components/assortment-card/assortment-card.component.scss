@@ -119,47 +119,35 @@
 }
 
 
+
 @media (max-width:983px) {
     .assortment-cards-card {
-        gap: 16px;
+        gap: 13px;
 
         &-content {
-            &-description p {
+            &-title h4 {
+                font-size: 20px;
                 line-height: 25px;
-                font-size: 15px;
             }
-        }
 
-    }
-}
-
-
-@media (max-width:700px) {
-    .assortment-cards-card-content {
-        gap: 3px;
-
-        &-title h4 {
-            font-size: 20px;
-            line-height: 25px;
-        }
-
-        &-description p {
-            line-height: 19px;
-            font-size: 10px;
-        }
-
-        & button {
-            width: 140px;
-
-            & p {
-                font-size: 11px;
-                padding: 0px;
+            &-description p {
+                line-height: 19px;
+                font-size: 10px;
+            }
+            & button {
+                width: 140px;
+    
+                & p {
+                    font-size: 11px;
+                    padding: 0px;
+                }
             }
         }
     }
 }
 
-@media (max-width:560px) {
+
+@media (max-width:570px) {
     .assortment-cards {
         gap: 41px;
         padding-bottom: 40px;
@@ -171,7 +159,10 @@
             &-content {
                 gap: 15px;
                 padding: 0 10px;
-               
+                &-title h4{
+                    font-size: 14px;
+                    text-align: center;
+                }
 
                 & button {
                     width: 100%;

@@ -1,5 +1,5 @@
 .aboutNewConent {
-    margin-top: 160px;
+    margin: 100px 0 150px;
     width: 100%;
     display: flex;
 
@@ -82,20 +82,21 @@
 
 
 
-@media (786px <=width <=943px) {
-    .aboutNewConent {
-        margin-top: 434px;
-    }
-}
+// @media (786px <=width <=943px) {
+//     .aboutNewConent {
+//         margin-top: 434px;
+//     }
+// }
 
 @media (max-width:785px) {
     .aboutNewConent {
-        margin: 0 0 50px;
+        margin:  50px 0 337px;
     }
 }
 
 @media (max-width:516px) {
     .aboutNewConent {
+        margin: 0px 0 150px;
         gap: 40px 20px;
         display: flex;
         flex-direction: column;

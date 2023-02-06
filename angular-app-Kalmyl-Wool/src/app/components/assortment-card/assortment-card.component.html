@@ -1,13 +1,13 @@
 
 <div class="assortment-cards">
     <div class="assortment-cards-card" *ngFor="let item of assortment">
-        <img src={{item.img}} alt="">
+        <img src="{{ imgUrl + item.attributes.image.data.attributes.url}}" alt="img">
         <div class="assortment-cards-card-content">
             <div class="assortment-cards-card-content-title">
-                <h4>{{item.title}}</h4>
+                <h4>{{item.attributes.title}}</h4>
             </div>
             <div class="assortment-cards-card-content-description">
-                <p>{{item.description}}</p>
+                <p>{{item.attributes.description}}</p>
             </div>
             <button routerLink="/detailed">
                 <p>Подробно</p>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './pages/main/main.component';
@@ -37,6 +37,9 @@ import { AssortmentCardComponent } from './components/assortment-card/assortment
 import { AssortmentDetailedComponent } from './pages/assortment-detailed/assortment-detailed.component';
 import { ButtonComponent } from './components/button/button.component';
 import { AboutNewContentComponent } from './components/pages/about/about-new-content/about-new-content.component'
+import { NewServiceService } from './new-service.service';
+import { CardRepository } from './repository/card';
+import { AssortmentRepository } from './repository/assortment';
 
 @NgModule({
   declarations: [
@@ -72,15 +75,18 @@ import { AboutNewContentComponent } from './components/pages/about/about-new-con
     AssortmentDetailedComponent,
     ButtonComponent,
     AboutNewContentComponent,
+    
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserModule,
+    HttpClientModule
     
   ],
-  providers: [],
+  providers: [CardRepository,AssortmentRepository],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

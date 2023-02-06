@@ -2,7 +2,7 @@
 
     width: 100%;
     display: grid;
-    grid-template-columns: minmax(199px, 280px) minmax(403px, 550px);
+    grid-template-columns: minmax(199px, 280px) minmax(403px, 492px);
     grid-template-rows: 100px;
     gap: 0px 0px;
     grid-template-areas:
@@ -31,17 +31,19 @@
         font-style: normal;
         gap: 10px;
         position: relative;
+        
 
         & h4 {
 
             font-weight: 600;
             font-size: calc(60px * 0.5);
-            line-height: 49px;
+            line-height: 35px;
             border-bottom: 0.290625px solid #3D4043;
             letter-spacing: 0.08em;
             text-transform: uppercase;
             padding-left: 10px;
             color: #3D4043;
+            padding-bottom: 8px;
         }
 
         & p {
