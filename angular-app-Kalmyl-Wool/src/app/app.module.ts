@@ -40,6 +40,7 @@ import { AboutNewContentComponent } from './components/pages/about/about-new-con
 import { NewServiceService } from './new-service.service';
 import { CardRepository } from './repository/card';
 import { AssortmentRepository } from './repository/assortment';
+import { DetailedRepository } from './repository/detailed';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,7 @@ import { AssortmentRepository } from './repository/assortment';
     HttpClientModule
     
   ],
-  providers: [CardRepository,AssortmentRepository],
+  providers: [CardRepository,AssortmentRepository, DetailedRepository],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

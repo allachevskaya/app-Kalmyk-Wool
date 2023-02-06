@@ -3,7 +3,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 50px;
     padding-bottom: 80px;
 
 
@@ -31,7 +31,7 @@
             font-style: normal;
             gap: 20px;
             // min-width: 173px;
-            max-width: 550px;
+            max-width: 650px;
 
             &-title {
 
@@ -134,9 +134,10 @@
                 line-height: 19px;
                 font-size: 10px;
             }
+
             & button {
                 width: 140px;
-    
+
                 & p {
                     font-size: 11px;
                     padding: 0px;
@@ -147,7 +148,7 @@
 }
 
 
-@media (max-width:570px) {
+@media (max-width:650px) {
     .assortment-cards {
         gap: 41px;
         padding-bottom: 40px;
@@ -159,7 +160,8 @@
             &-content {
                 gap: 15px;
                 padding: 0 10px;
-                &-title h4{
+
+                &-title h4 {
                     font-size: 14px;
                     text-align: center;
                 }

@@ -1,16 +1,18 @@
 <section class="assortmentItems">
-    <div class="assortmentItems-item" *ngFor="let item of assortmentDetailed">
-       <h5>{{item.title}}</h5>
+    <div class="assortmentItems-item" *ngFor="let item of assortmentDetailed; ">
+       <h5>{{item.attributes.title}}</h5>
        <div class="assortmentItems-item-slider">
           <div class="assortmentItems-item-slider-slide" *ngIf="flag">
-             <img src={{item.img[0]}} alt="img">
-             <img src={{item.img[1]}} alt="img">
+            <img src="{{ imgUrl + item.attributes.img.data[0].attributes.url}}" alt="img">
+            <img src="{{ imgUrl + item.attributes.img.data[1].attributes.url}}" alt="img">
+
           </div>
 
           <div class="assortmentItems-OpenSlider" *ngIf="!flag">
-             <div  *ngFor="let img of item.img; let i = index"
-                >
-                <img src={{item.img[i]}} alt="img">
+             <div *ngFor="let tmp of item.attributes.img.data; let i =index"  >
+                
+                <img src="{{ imgUrl + tmp.attributes.url}}" alt="img">
+               
              </div>
           </div>
 
@@ -19,30 +21,30 @@
           </button>
        </div>
        <div class="assortmentItems-item-content">
-          <p>Brand</p>
-          <p>{{item.Brand}}</p>
-          <p>Place of Origin</p>
-          <p>{{item.PlaceOfOrigin}}</p>
-          <p>Weight (kg)</p>
-          <p>{{item.Weight}}</p>
-          <p>Unit Type</p>
-          <p>{{item.UnitType}}</p>
-          <p>FOB price 1 (USD)</p>
-          <p>{{item.FOBPrice}}</p>
-          <p>MOQ 1</p>
-          <p>{{item.MOQ}}</p>
-          <p>Processing Time</p>
-          <p>{{item.ProcessingTime}}</p>
-          <p>Port</p>
-          <p>{{item.Port}}</p>
-          <p>Packaging Details</p>
-          <p>{{item.PackagingDetails}}</p>
-          <p>Amount</p>
-          <p>{{item.Amount}}</p>
-          <p>Unit</p>
-          <p>{{item.Unit}}</p>
-          <p>Time</p>
-          <p>{{item.Time}}</p>
+          <p>Бренд</p>
+          <p>{{item.attributes.Brand}}</p>
+          <p>Производство</p>
+          <p>{{item.attributes.PlaceOfOrigin}}</p>
+          <p>Вес (kг)</p>
+          <p>{{item.attributes.Weight}}</p>
+          <p>Единица измерения (в шт)</p>
+          <p>{{item.attributes.UnitType}}</p>
+          <p>FOB цена в USD от-до</p>
+          <p>{{item.attributes.FOBPrice}}</p>
+          <p>Минимальный объём</p>
+          <p>{{item.attributes.MOQ}}</p>
+          <p>Время доставки до порта</p>
+          <p>{{item.attributes.ProcessingTime}}</p>
+          <p>Ближайший порт</p>
+          <p>{{item.attributes.Port}}</p>
+          <p>Детали упавковки</p>
+          <p>{{item.attributes.PackagingDetails}}</p>
+          <p>Объем</p>
+          <p>{{item.attributes.Amount}}</p>
+          <p>Единица измерения</p>
+          <p>{{item.attributes.Unit}}</p>
+          <p>Период</p>
+          <p>{{item.attributes.Time}}</p>
        </div>
     </div>
  </section>

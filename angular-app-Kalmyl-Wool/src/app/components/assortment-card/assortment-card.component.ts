@@ -1,7 +1,7 @@
 
 
 
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AssortmentRepository } from 'src/app/repository/assortment';
 
 
@@ -27,7 +27,7 @@ interface DataAssortment {
 
 
 
-export class AssortmentCardComponent {
+export class AssortmentCardComponent implements OnInit {
 
 
   response: any;
@@ -36,18 +36,17 @@ export class AssortmentCardComponent {
 
   constructor(private assortmentRepo: AssortmentRepository) { }
 
-
   ngOnInit(): void {
 
-    this.fetchUser();
+    this.fetchAssortment();
     this.imgUrl = 'http://188.225.75.102:1337';
     
 
   }
 
 
-  private async fetchUser() {
-    this.assortment = await this.assortmentRepo.random();
+  private async fetchAssortment() {
+    this.assortment = await this.assortmentRepo.renderAssortment();
     
   }
 

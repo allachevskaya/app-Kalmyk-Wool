@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 200px;
-    padding-bottom: 80px;
+    padding: 80px 0;
 
     font-family: Montserrat;
     font-style: normal;
@@ -11,7 +11,7 @@
 
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100px auto 1fr;
+        grid-template-rows: auto auto 1fr;
         justify-content: center;
         gap: 50px;
 
@@ -20,7 +20,7 @@
             font-weight: 500;
             font-size: 40px;
             line-height: 49px;
-            padding: 40px 0;
+          
             letter-spacing: .08em;
             text-transform: uppercase;
             color: #3d4043;
@@ -30,19 +30,22 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 20px;
+            gap: 65px;
 
             &-slide {
 
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: repeat(2, minmax(120px, 600px));
                 gap: 30px;
                 width: 100%;
+                justify-content: center;
+                align-items: center;
 
             }
 
             & img {
                 width: 100%;
+               
             }
 
             & button {
@@ -56,6 +59,7 @@
                 animation-duration: 1.6s;
                 transition: all ease-in-out;
                 animation-iteration-count: infinite;
+                margin: 0 auto;
 
                 & p {
                     font-family: 'Montserrat';
@@ -77,9 +81,9 @@
         &-content {
 
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(2, minmax(150px, 600px));
             gap: 20px;
-
+            justify-content: center;
 
             & p {
                 font-weight: 300;
@@ -117,14 +121,15 @@
             gap: 44px;
 
             & h5 {
-                padding: 44px 0;
+               
                 font-size: 37px;
             }
 
             &-slider {
                 grid-template-columns: 30px 1fr 30px;
                 gap: 27px;
-                & button p{
+
+                & button p {
                     padding: 5px 10px;
                     font-size: 15px;
                 }
@@ -138,10 +143,11 @@
                     line-height: 22px;
                 }
 
-               
+
             }
         }
-        &-OpenSlider img{
+
+        &-OpenSlider img {
             width: 200px;
         }
     }
@@ -152,86 +158,43 @@
 
 @media (max-width: 600px) {
     .assortmentItems {
-        padding-bottom: 40px;
+        padding: 40px 0;
         gap: 40px;
+        
 
         &-item {
-            grid-template-rows: 80px auto 1fr;
-
+            grid-template-rows: 50px auto 1fr;
+            gap: 13px;
             & h5 {
-                padding: 34px 0;
-                font-size: 27px;
+                padding: 10px 0;
+                font-size: 19px;
+                line-height: 28px;
             }
-        }
-    }
-
-
-}
-
-
-@media (max-width:450px) {
-    .assortmentItems {
-        padding-bottom: 40px;
-        gap: 20px;
-
-        &-item {
-            grid-template-rows: 57px auto 1fr;
-            gap: 15px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #3d404357;
-
-            & h5 {
-                padding: 18px 0;
-                font-size: 21px;
-            }
-
-            &-slider {
-                grid-template-columns: 20px 1fr 20px;
-                gap: 11px;
-
-                &-slide {
-                    gap: 8px;
-                }
-                & button p{
-                    padding: 0px 12px;
-                    font-size: 11px;
-                    color: #3d4043;;
-                }
-            }
-
             &-content {
-
-                gap: 9px 6px;
-
+                gap: 7px;
+                margin-top: 10px;
+        
                 & p {
-                    font-size: 12px;
-                    line-height: 20px;
+                    font-size: 10px;
+                    line-height: 13px;
+                }
+            }
+            &-slider {
+                & button p {
+                    font-size: 13px;
+                    padding: 0 7px;
                 }
             }
         }
+    }
 
-        &-item:last-child {
-            border: 0;
-        }
-
-        &-OpenSlider img{
-            width: 120px;
-        }
+    .assortmentItems-OpenSlider img {
+        width: 120px;
     }
 
 }
 
 
-@media (max-width:320px) {
-    .assortmentItems-item-content {
-        gap: 7px;
-
-        & p {
-            font-size: 10px;
-            line-height: 13px;
-        }
-    }
-}
 
 
 

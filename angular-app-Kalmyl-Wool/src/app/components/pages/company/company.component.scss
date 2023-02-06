@@ -84,18 +84,18 @@
 
 }
 
-.under__decor {
-    position: absolute;
+// .under__decor {
+//     position: absolute;
 
-    top: -274px;
-    right: 0;
+//     top: -274px;
+//     right: 0;
 
-    background-image: url('../../../../assets/images/company/Frame\ 40.png');
-    width: 92px;
-    height: 275px;
+//     background-image: url('../../../../assets/images/company/Frame\ 40.png');
+//     width: 92px;
+//     height: 275px;
 
-    background-repeat: no-repeat;
-}
+//     background-repeat: no-repeat;
+// }
 
 
 /*===========text============*/
@@ -147,6 +147,7 @@
     .company-title {
         font-size: 27px;
         margin: 64px 25px 10px;
+        line-height: 41px;
     }
 
     .company-text {
