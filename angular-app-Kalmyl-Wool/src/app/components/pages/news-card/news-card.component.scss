@@ -83,11 +83,11 @@
 @media (max-width:654px) {
     .news-container{
         grid-template-columns: repeat(auto-fill, 344px);
-        
+        padding-top: 30px;
     }
     .card {
 
-       
+      
         grid-template-rows: repeat(5, auto);
         gap: 8px;
 

@@ -41,11 +41,21 @@
     transform: scale(0.94);
 }
 
+.select {
+    position: absolute;
+    right: 49%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+    background-color: inherit;
+    color: aliceblue;
+    outline: none;
+    border: 0;
+}
 
 
 @media (max-width:1322px) {
     .header {
-        padding: 0 40px;
+        padding: 0 68px;
     }
 
     .menu-link {
@@ -55,7 +65,7 @@
 
 @media (max-width:1048px) {
     .header {
-        padding: 0 20px;
+        padding: 0 60px;
 
         &-menu {
             gap: 45px;
@@ -127,6 +137,21 @@
         border-bottom: 1px solid #ffffff8f;
         font-size: 21px;
     }
+
+    .select {
+        position: absolute;
+        left: 45px;
+        top: 60px;
+        width: 40px;
+        background-color: inherit;
+        color: aliceblue;
+        outline: none;
+        border: 0;
+        
+    }
+
+   
+
 }
 
 @media (max-width:510px) {
