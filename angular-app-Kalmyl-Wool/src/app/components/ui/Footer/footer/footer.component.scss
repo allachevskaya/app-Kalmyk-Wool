@@ -6,7 +6,8 @@
     padding: 80px 180px;
     color: white;
     background: #3D4043;
-    &-title{
+
+    &-title {
         text-align: center;
         margin: 0 auto;
         font-weight: 400;
@@ -16,29 +17,35 @@
         text-align: center;
         padding-bottom: 80px;
     }
-    &-content{
+
+    &-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap:40px;
+        gap: 40px;
         justify-content: space-between;
+
     }
-    &-subtitle{
+
+    &-subtitle {
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-       align-items: flex-start;
-       gap:9px;
-       font-size: 20px;
-       margin-top: 40px;
-       
-       padding: 0 10px 10px 10px;
-       & p{
-        line-height: 30px;
-       }
-       & a{
-        color:#FFFFFF
-       }}
+        align-items: flex-start;
+        gap: 9px;
+        font-size: 20px;
+        margin-top: 40px;
+
+        padding: 0 10px 10px 10px;
+
+        & p {
+            line-height: 30px;
+        }
+
+        & a {
+            color: #FFFFFF
+        }
+    }
 }
 
 @media (max-width:1322px) {
@@ -59,34 +66,39 @@
 
 
 @media (max-width:904px) {
-    .footer{
-        &-title{
+    .footer {
+        &-title {
             font-size: 22px;
             padding-bottom: 40px;
         }
-        &-content{
-            gap:8px;
+
+        &-content {
+            gap: 8px;
         }
     }
 }
 
 
 @media (max-width:784px) {
-    .footer-content{
+    .footer-content {
         display: flex;
         flex-direction: column;
-        gap:4px;
+        gap: 4px;
     }
-    .footer-subtitle{
+
+    .footer-subtitle {
         position: relative;
-        bottom:-84px;
+        bottom: -45px;
         left: 0;
-       
+        margin: 0;
+
     }
-    .footer{
-        padding-bottom: 80px;
+
+    .footer {
+        padding-bottom: 50px;
     }
-    .autor{
+
+    .autor {
         text-align: center;
         width: 100%;
         padding: 20px 0;
@@ -96,16 +108,19 @@
 
 
 @media (max-width:450px) {
-    .footer{
-    &-title {
-        font-size: 18px;
-        line-height: 33px;
-    }
-    &-subtitle{
-        font-size: 15px;
-        & p{
-            line-height: 22px;
+    .footer {
+        &-title {
+            font-size: 18px;
+            line-height: 33px;
+        }
+
+        &-subtitle {
+
+            font-size: 15px;
+
+            & p {
+                line-height: 22px;
+            }
         }
     }
-}
 }

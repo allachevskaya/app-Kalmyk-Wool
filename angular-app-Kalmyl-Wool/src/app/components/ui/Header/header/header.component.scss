@@ -47,9 +47,12 @@
     top: 100px;
     transform: translate(-50%, -50%);
     background-color: inherit;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     outline: none;
     border: 0;
+    & option {
+        color:black
+     }
 }
 
 
@@ -144,9 +147,12 @@
         top: 60px;
         width: 40px;
         background-color: inherit;
-        color: aliceblue;
+        color: rgb(255, 255, 255);
         outline: none;
         border: 0;
+        & option {
+           color:black
+        }
         
     }
 
