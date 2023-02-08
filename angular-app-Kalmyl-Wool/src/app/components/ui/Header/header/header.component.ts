@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -8,25 +8,25 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
 
-  toggleMenu:boolean | undefined;
-  lang?:any;
-  
+  toggleMenu: boolean | undefined;
+  lang?: any;
+
   ngOnInit(): void {
-    toggleMenu:false;
-    this.lang =  'ru' || localStorage.getItem('lang');
+    toggleMenu: false;
+    this.lang = 'ru' || localStorage.getItem('lang');
   }
-  
+
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('ru');
-}
+  }
 
-  openMenu(){
+  openMenu() {
     this.toggleMenu = !this.toggleMenu
   }
 
-  changeLang(lang: any){
-    localStorage.setItem('lang',lang.value);
+  changeLang(lang: any) {
+    localStorage.setItem('lang', lang.value);
     this.translate.use(lang.value);
-    
+
   }
 }

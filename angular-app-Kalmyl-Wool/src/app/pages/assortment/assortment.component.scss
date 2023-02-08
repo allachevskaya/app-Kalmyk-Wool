@@ -26,16 +26,48 @@
 
 
 @media (max-width:900px) {
-    .assortment-container-title{
+    .assortment-container{
+        padding: 0 61px ;
+   
+    &-title{
         padding: 44px 0;
         font-size: 37px;
     }
 }
+}
 
 
 @media (max-width:500px) {
-    .assortment-container-title{
+    .assortment-container{
+        padding: 0 40px;
+    
+    &-title{
         padding: 34px 0;
         font-size: 27px;
+    }
+
+}
+}
+
+
+.arrow{
+    position: fixed;
+    top:50%;
+    right: 0;
+    z-index: 15;
+    & img{
+        width: 40px;
+        height: 50px;
+    }
+}
+
+@media (max-width:500px) {
+    .arrow{
+        & img{
+            
+                width: 20px;
+                height: 25px;
+            
+        }
     }
 }

@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { CardRepository } from 'src/app/repository/card';
+import { Component, OnInit } from '@angular/core';
+import { GeneralService } from 'src/app/services/general.service';
 
 
 
@@ -32,7 +32,7 @@ export class NewsCardComponent implements OnInit {
   cards: Data[] | null = null;
   imgUrl?:string;
 
-  constructor(private cardRepo: CardRepository) { }
+  constructor(private cardRepo: GeneralService) { }
 
 
   ngOnInit(): void {

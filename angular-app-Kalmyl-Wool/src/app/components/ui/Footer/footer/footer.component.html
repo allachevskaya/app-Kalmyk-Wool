@@ -5,10 +5,10 @@
     <div class="footer-content">
         <app-footer-nav></app-footer-nav>
         <app-footer-contacts></app-footer-contacts>
-        <div class="footer-subtitle">
+        <div class="footer-subtitle" *ngFor="let name of name">
 
             
-            <p>Джиргал Даваев</p> 
+            <p>{{name.attributes.name}}</p> 
             {{'FOOTER.FOOTER__director'| translate}}
              <a href="tel:89276456400"> {{'FOOTER.FOOTER__tel'| translate}} +7 (927) 645 64 00.</a> 
             <p class="autor">©KalmykWool2022</p>

@@ -112,15 +112,16 @@
 
         &-logo {
             position: absolute;
-            top: 40px;
+            top: 9px;
             left: 50%;
             height: 80px;
             transform: translate(-50%, -50%);
+        
         }
 
         &-icon {
             position: absolute;
-            top: 40px;
+            top: 19px;
             right: 0;
             transform: translate(-50%, -50%);
             width: 40px;
@@ -137,7 +138,8 @@
             justify-content: center;
             flex-wrap: wrap;
             position: relative;
-            top: 84px;
+            top: 114px;
+            
 
         }
 
@@ -150,8 +152,8 @@
 
     .select {
         position: absolute;
-        left: -256px;
-        top: -7px;
+        right: 10px;
+        top: 45px;
         width: 40px;
         background-color: inherit;
         color: rgb(255, 255, 255);

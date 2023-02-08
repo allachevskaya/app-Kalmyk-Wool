@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DetailedRepository } from 'src/app/repository/detailed';
+import { GeneralService } from 'src/app/services/general.service';
 
 
 interface Detailed {
@@ -42,7 +42,7 @@ export class AssortmentItemComponent implements OnInit {
   assortmentDetailed: DataDetailed[] | null = null;
 
 
-  constructor(private detailedRepo: DetailedRepository) { }
+  constructor(private detailedRepo: GeneralService) { }
 
   ngOnInit(): void {
    

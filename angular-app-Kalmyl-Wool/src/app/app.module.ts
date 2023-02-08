@@ -28,9 +28,7 @@ import { StaffCardComponent } from './components/staff-card/staff-card.component
 import { AssortmentCardComponent } from './components/assortment-card/assortment-card.component';
 import { AssortmentDetailedComponent } from './pages/assortment-detailed/assortment-detailed.component';
 import { ButtonComponent } from './components/button/button.component';
-import { CardRepository } from './repository/card';
-import { AssortmentRepository } from './repository/assortment';
-import { DetailedRepository } from './repository/detailed';
+import { GeneralService } from './services/general.service';
 
 
 
@@ -84,7 +82,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   })
 
   ],
-  providers: [CardRepository, AssortmentRepository, DetailedRepository],
+  providers: [GeneralService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

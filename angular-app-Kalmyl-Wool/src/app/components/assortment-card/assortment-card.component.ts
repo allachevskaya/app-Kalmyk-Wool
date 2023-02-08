@@ -2,7 +2,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { AssortmentRepository } from 'src/app/repository/assortment';
+import { GeneralService } from 'src/app/services/general.service';
 
 
 interface Assortment {
@@ -34,7 +34,7 @@ export class AssortmentCardComponent implements OnInit {
   assortment: DataAssortment[] | null = null;
   imgUrl?: string;
 
-  constructor(private assortmentRepo: AssortmentRepository) { }
+  constructor(private assortmentRepo: GeneralService) { }
 
   ngOnInit(): void {
 
