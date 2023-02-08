@@ -1,11 +1,12 @@
-.assortment{
+.assortment {
     width: 100%;
     background-color: #3D4043;
     width: 100%;
     height: max-content;
+
     &-container {
         background-color: white;
-        
+
 
         &-title {
             text-align: center;
@@ -14,7 +15,7 @@
             font-weight: 500;
             font-size: 40px;
             line-height: 49px;
-            
+
             padding: 100px 0;
             letter-spacing: 0.08em;
             text-transform: uppercase;
@@ -26,48 +27,49 @@
 
 
 @media (max-width:900px) {
-    .assortment-container{
-        padding: 0 61px ;
-   
-    &-title{
-        padding: 44px 0;
-        font-size: 37px;
+    .assortment-container {
+        padding: 0 61px;
+
+        &-title {
+            padding: 44px 0;
+            font-size: 37px;
+        }
     }
-}
 }
 
 
 @media (max-width:500px) {
-    .assortment-container{
+    .assortment-container {
         padding: 0 40px;
-    
-    &-title{
-        padding: 34px 0;
-        font-size: 27px;
+
+        &-title {
+            padding: 34px 0;
+            font-size: 27px;
+        }
+
     }
-
-}
 }
 
 
-.arrow{
+.arrow {
     position: fixed;
-    top:50%;
+    top: 50%;
     right: 0;
     z-index: 15;
-    & img{
+
+    & img {
         width: 40px;
         height: 50px;
     }
 }
 
 @media (max-width:500px) {
-    .arrow{
-        & img{
-            
-                width: 20px;
-                height: 25px;
-            
+    .arrow {
+        & img {
+
+            width: 20px;
+            height: 25px;
+
         }
     }
 }

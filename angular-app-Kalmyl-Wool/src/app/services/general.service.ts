@@ -14,7 +14,7 @@ export class GeneralService {
     return data;
   }
 
-  async renderName(){
+  async renderName() {
     const responseName = await fetch('http://188.225.75.102:1337/api/names?populate=*');
     const respDataName = await responseName.json();
     const { data } = respDataName;
