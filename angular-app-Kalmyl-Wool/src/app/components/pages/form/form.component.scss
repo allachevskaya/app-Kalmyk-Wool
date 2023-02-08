@@ -30,32 +30,11 @@
             padding: 0 15px;
             border: 1px solid rgba(255, 0, 0, 0);
             width: max-content;
-            animation: 4s linear 0s infinite alternate btn;
+            border: 1px solid rgb(0, 0, 0);
         }
     }
 }
 
-
-@keyframes btn {
-    from {
-
-
-        border-bottom: 1px solid #3D4043;
-    }
-
-    50% {
-        border-left: 1px solid #3D4043;
-    }
-
-    60% {
-        border-top: 1px solid #3D4043;
-    }
-
-    to {
-        border-right: 1px solid #3D4043;
-    }
-
-}
 
 
 @media (max-width:800px) {

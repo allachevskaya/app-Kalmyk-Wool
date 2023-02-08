@@ -130,8 +130,16 @@
 }
 
 
-@media (max-width: 447px) {
+@media (max-width: 500px) {
     .about{
         padding-bottom: 151px;
+        &-title{
+            padding: 38px 0;
+            & h5{
+                font-size: 27px;
+                line-height: 33px;
+            }
+        }
     }
 }
+

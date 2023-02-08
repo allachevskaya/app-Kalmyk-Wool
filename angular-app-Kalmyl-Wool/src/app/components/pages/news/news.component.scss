@@ -23,3 +23,16 @@
     }
     
 }
+
+@media (max-width:500px) {
+        .news{
+            &-title{
+                padding: 55px 0;
+                & h5{
+                    font-size: 27px;
+                    line-height: 28px;
+                }
+            }
+        }
+
+}
