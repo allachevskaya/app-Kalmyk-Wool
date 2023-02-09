@@ -1,0 +1,9 @@
+<section class="news" id="news">
+  <app-header (myOutput) ="GetLang($event)"></app-header>
+  <div class="news-title">
+    <h5>{{'HEADER.LINK_news' | translate}}</h5>
+  </div>
+    
+    <app-news-card [currentLang]="currentLang"></app-news-card>
+
+</section>

@@ -1,0 +1,22 @@
+<div class="container news-container">
+
+    <div class="card" *ngFor="let item of cards">
+        <img src="{{ imgUrl + item.attributes.img.data.attributes.url}}" alt="img">
+
+        <div class="card-title">
+            {{item.attributes.title}}
+        </div>
+        <div class="card-description">
+            {{item.attributes.description}}
+        </div>
+        <div class="card-date">
+            {{item.attributes.date}}
+        </div>
+        <div class="card-link">
+            <a href={{item.attributes.link}}>
+                <p>{{'BTN.BTN_MORE' | translate}}</p>
+            </a>
+        </div>
+    </div>
+
+</div>

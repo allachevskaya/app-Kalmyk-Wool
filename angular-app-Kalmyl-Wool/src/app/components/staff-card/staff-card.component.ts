@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { GeneralService } from 'src/app/services/general.service';
 
 
@@ -19,7 +19,9 @@ interface DataStaff {
   templateUrl: './staff-card.component.html',
   styleUrls: ['./staff-card.component.scss']
 })
-export class StaffCardComponent implements OnInit {
+export class StaffCardComponent implements OnInit, OnChanges {
+
+  @Input() currentLang = ''; // тут мы получили язык от родительского класса (стафф)
 
   response: any;
   staff: DataStaff[] | null = null;
@@ -29,6 +31,12 @@ export class StaffCardComponent implements OnInit {
 
   constructor(private staffRepo: GeneralService) { }
 
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(this.currentLang)
+    console.log('staff card :', this.currentLang)
+    this.fetchStaff();
+  }
+
   ngOnInit(): void {
     this.fetchStaff();
     this.imgUrl = 'http://188.225.75.102:1337';
@@ -36,8 +44,18 @@ export class StaffCardComponent implements OnInit {
   }
 
   private async fetchStaff() {
-    this.staff = await this.staffRepo.renderStaff()
+    if (this.currentLang == 'en') {
+      this.staff = await this.staffRepo.renderStaff_en()
+    } else if (this.currentLang == 'ch') {
+      this.staff = await this.staffRepo.renderStaff_ch();
+    }
+    else { 
+      this.staff = await this.staffRepo.renderStaff(); 
+    }
+
   }
+
+
 
 
 }

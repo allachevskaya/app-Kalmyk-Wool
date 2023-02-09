@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-main-page-text',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-page-text.component.scss']
 })
 export class MainPageTextComponent {
-
+  @Input() currentLang = ''; // тут мы получили язык от родительского класса (assortiment detailed component)
 }

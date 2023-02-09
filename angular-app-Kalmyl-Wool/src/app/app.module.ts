@@ -16,8 +16,8 @@ import { MainPageTextComponent } from './components/pages/main-page/main-page-te
 import { AboutComponent } from './components/pages/about/about.component';
 import { CompanyComponent } from './components/pages/company/company.component';
 import { ProcessComponent } from './components/pages/process/process.component';
-import { NewsComponent } from './components/pages/news/news.component';
-import { NewsCardComponent } from './components/pages/news-card/news-card.component';
+import { NewsComponent } from './pages/news/news.component';
+import { NewsCardComponent } from './components/news-card/news-card.component';
 import { FormComponent } from './components/pages/form/form.component';
 import { FormsModule } from '@angular/forms';
 import { AddArticleComponent } from './components/add-article/add-article.component';

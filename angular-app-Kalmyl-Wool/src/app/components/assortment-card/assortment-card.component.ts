@@ -1,7 +1,7 @@
 
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { GeneralService } from 'src/app/services/general.service';
 
 
@@ -27,8 +27,8 @@ interface DataAssortment {
 
 
 
-export class AssortmentCardComponent implements OnInit {
-
+export class AssortmentCardComponent implements OnInit, OnChanges {
+  @Input() currentLang = ''; // тут мы получили язык от родительского класса (assortiment component)
 
   response: any;
   assortment: DataAssortment[] | null = null;
@@ -36,18 +36,26 @@ export class AssortmentCardComponent implements OnInit {
 
   constructor(private assortmentRepo: GeneralService) { }
 
-  ngOnInit(): void {
 
+  ngOnChanges(changes: SimpleChanges): void {
     this.fetchAssortment();
-    this.imgUrl = 'http://188.225.75.102:1337';
-    
+  }
 
+  ngOnInit(): void {
+    this.imgUrl = 'http://188.225.75.102:1337';
   }
 
 
   private async fetchAssortment() {
-    this.assortment = await this.assortmentRepo.renderAssortment();
-    
+
+    if (this.currentLang == 'en') {
+      this.assortment = await this.assortmentRepo.renderAssortment_en();
+    } else if (this.currentLang == 'ch') {
+      this.assortment = await this.assortmentRepo.renderAssortment_ch();
+    }
+    else {
+      this.assortment = await this.assortmentRepo.renderAssortment();
+    }
   }
 
 

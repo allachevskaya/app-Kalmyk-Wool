@@ -1,12 +1,12 @@
 <section class="assortment">
-    <app-header></app-header>
+    <app-header (myOutput) ="GetLang($event)"></app-header>
 
     <a class="arrow"  href="/assortment"><img src="assets/images/arrowBlack.png" alt="" ></a>
     <div class="container assortment-container">
         <div class="assortment-container-title">
             {{'ASSORTMENT.ASSORTMENT__title' | translate}}
         </div>
-        <app-assortment-card></app-assortment-card>
+        <app-assortment-card [currentLang]="currentLang"></app-assortment-card>
         
     </div>
 </section>

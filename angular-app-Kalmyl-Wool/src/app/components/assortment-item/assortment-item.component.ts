@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { GeneralService } from 'src/app/services/general.service';
 
 
@@ -33,7 +33,7 @@ interface DataDetailed {
   templateUrl: './assortment-item.component.html',
   styleUrls: ['./assortment-item.component.scss']
 })
-export class AssortmentItemComponent implements OnInit {
+export class AssortmentItemComponent implements OnInit, OnChanges {
 
   response: any;
   flag?:boolean;
@@ -42,25 +42,34 @@ export class AssortmentItemComponent implements OnInit {
   assortmentDetailed: DataDetailed[] | null = null;
 
 
+  @Input() currentLang = ''; // тут мы получили язык от родительского класса (assortiment detailed component)
+
+
   constructor(private detailedRepo: GeneralService) { }
 
   ngOnInit(): void {
    
-    this.fetchDetailed();
+   
     this.imgUrl = 'http://188.225.75.102:1337';
     this.flag = true;
     this.titleBtn = 'Посмотреть больше';
   }
-
-  private async fetchDetailed() {
-    this.assortmentDetailed = await this.detailedRepo.renderDetailed();
-    
+  ngOnChanges(changes: SimpleChanges): void {
+    this.fetchDetailed();
   }
 
- 
-
-  
-  
+  private async fetchDetailed() {
+    
+    if (this.currentLang == 'en') {
+      this.assortmentDetailed = await this.detailedRepo.renderDetailed_en();
+    } else if (this.currentLang == 'ch') {
+      this.assortmentDetailed = await this.detailedRepo.renderDetailed_ch();
+    }
+    else {
+      this.assortmentDetailed = await this.detailedRepo.renderDetailed();
+    }
+    
+  }
 
   openIMG() {
 

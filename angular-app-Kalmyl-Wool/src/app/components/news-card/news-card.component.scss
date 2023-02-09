@@ -1,0 +1,125 @@
+.news-container {
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 150px ;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.card {
+    border-right: 0.3px solid #3D4043;
+    border-radius: 50px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 50px repeat(3, auto);
+    gap: 31px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #3D4043;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    position: relative;
+
+    &-title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: #EDC147;
+        padding-right: 10px;
+
+    }
+
+    & img {
+        width: 100%;
+    }
+
+    &-description {
+
+        font-weight: 400;
+        padding-right: 10px;
+        font-size: 18px;
+        line-height: 28px;
+
+
+    }
+
+    &-date {
+
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 12px;
+        color: #EDC147;
+
+    }
+
+    &-link {
+        padding-right: 10px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        width: 100%;
+        position: absolute;
+        bottom: 20px;
+        & a {
+            color: #3D4043;
+            text-transform: uppercase;
+            margin-left: auto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            padding-bottom: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media (max-width:1300px) {
+    .news-container {
+        gap: 63px;
+    }
+}
+
+@media (max-width:654px) {
+    .news-container{
+        grid-template-columns: repeat(auto-fill, 344px);
+        padding-top: 30px;
+    }
+    .card {
+
+      
+        grid-template-rows: repeat(5, auto);
+        gap: 8px;
+
+        &-title {
+            font-size: 17px;
+            line-height: 24px;
+        }
+
+        &-description {
+            font-size: 15px;
+            line-height: 22px;
+        }
+        &-link{
+            position: static;
+        }
+    }
+
+    .news-container {
+        gap: 40px;
+    }
+}
+
+.card:hover{
+    transform: scale(0.98);
+}
+
+
+
+@media (max-width:350px) {
+    .news-container{
+        grid-template-columns: repeat(auto-fill, 244px);
+        
+    }
+}

@@ -1,11 +1,11 @@
 <section class="staff">
-    <app-header></app-header>
+    <app-header (myOutput) ="GetLang($event)"></app-header>
 
     <div class="container staff-container">
         <div class="staff-container-title">
             {{'STAFF.STAFF__title' | translate}}
         </div>
-        <app-staff-card></app-staff-card>
+        <app-staff-card [currentLang]="currentLang"></app-staff-card>
     </div>
 
 </section>

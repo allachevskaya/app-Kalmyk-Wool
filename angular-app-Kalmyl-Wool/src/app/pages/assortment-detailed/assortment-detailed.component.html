@@ -1,6 +1,6 @@
 <section class="assortmentDetailed">
-    <app-header></app-header>
+  <app-header (myOutput) ="GetLang($event)"></app-header>
     <div class="container assortmentDetailed-container">
-      <app-assortment-item></app-assortment-item>
+      <app-assortment-item [currentLang]="currentLang"></app-assortment-item>
     </div>
 </section>
