@@ -27,28 +27,27 @@ interface Data {
 
 
 export class NewsCardComponent implements OnInit, OnChanges {
-  @Input() currentLang = ''; // тут мы получили язык от родительского класса (assortiment detailed component)
+
+  @Input() currentLang = localStorage.getItem('lang'); 
 
 
   response: any;
   cards: Data[] | null = null;
   imgUrl?:string;
+  _openCard!: boolean;
 
   constructor(private cardRepo: GeneralService) { }
 
 
-  ngOnInit(): void {
-   
-    this.imgUrl = 'http://188.225.75.102:1337';
-  }
-
-
- 
-
 
   ngOnChanges(changes: SimpleChanges): void {
-    
     this.fetchCard();
+  }
+
+  ngOnInit(): void {
+    this.imgUrl = 'http://188.225.75.102:1337';
+    localStorage.getItem('lang');
+    this._openCard = false
   }
 
   private async fetchCard() {
@@ -62,5 +61,9 @@ export class NewsCardComponent implements OnInit, OnChanges {
       this.cards = await this.cardRepo.renderCard();
     }
     
+  }
+
+  openCard() {
+   this._openCard = !this._openCard
   }
 }

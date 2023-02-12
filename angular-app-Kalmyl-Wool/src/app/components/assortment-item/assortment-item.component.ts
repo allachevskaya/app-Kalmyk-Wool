@@ -42,20 +42,32 @@ export class AssortmentItemComponent implements OnInit, OnChanges {
   assortmentDetailed: DataDetailed[] | null = null;
 
 
-  @Input() currentLang = ''; // тут мы получили язык от родительского класса (assortiment detailed component)
+  @Input() currentLang = localStorage.getItem('lang'); // тут мы получили язык от родительского класса (assortiment detailed component)
 
 
   constructor(private detailedRepo: GeneralService) { }
 
-  ngOnInit(): void {
+  // ngOnInit(): void {
    
    
-    this.imgUrl = 'http://188.225.75.102:1337';
-    this.flag = true;
-    this.titleBtn = 'Посмотреть больше';
-  }
+  //   this.imgUrl = 'http://188.225.75.102:1337';
+  //   this.flag = true;
+  //   this.titleBtn = 'Посмотреть больше';
+  // }
+  // ngOnChanges(changes: SimpleChanges): void {
+  //   this.fetchDetailed();
+  // }
   ngOnChanges(changes: SimpleChanges): void {
     this.fetchDetailed();
+  }
+
+  ngOnInit(): void {
+    this.imgUrl = 'http://188.225.75.102:1337';
+
+
+    localStorage.getItem('lang')
+    // console.log( localStorage.getItem('lang'))
+
   }
 
   private async fetchDetailed() {
@@ -75,9 +87,9 @@ export class AssortmentItemComponent implements OnInit, OnChanges {
 
     this.flag = !this.flag;
 
-    if (this.flag === true) {
-      this.titleBtn = 'Посмотреть больше';
-    }
-    else this.titleBtn = 'Посмотреть меньше';
+    // if (this.flag === true) {
+    //   this.titleBtn = 'Посмотреть больше';
+    // }
+    // else this.titleBtn = 'Посмотреть меньше';
   }
 }

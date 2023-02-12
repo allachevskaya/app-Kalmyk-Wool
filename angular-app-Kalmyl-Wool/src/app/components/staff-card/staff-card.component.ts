@@ -21,8 +21,8 @@ interface DataStaff {
 })
 export class StaffCardComponent implements OnInit, OnChanges {
 
-  @Input() currentLang = ''; // тут мы получили язык от родительского класса (стафф)
-
+  @Input() currentLang = localStorage.getItem('lang'); // тут мы получили язык от родительского класса (стафф)
+ 
   response: any;
   staff: DataStaff[] | null = null;
   imgUrl?: string;
@@ -32,14 +32,15 @@ export class StaffCardComponent implements OnInit, OnChanges {
   constructor(private staffRepo: GeneralService) { }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.currentLang)
-    console.log('staff card :', this.currentLang)
     this.fetchStaff();
   }
 
   ngOnInit(): void {
-    this.fetchStaff();
     this.imgUrl = 'http://188.225.75.102:1337';
+
+
+    localStorage.getItem('lang')
+    // console.log( localStorage.getItem('lang'))
 
   }
 

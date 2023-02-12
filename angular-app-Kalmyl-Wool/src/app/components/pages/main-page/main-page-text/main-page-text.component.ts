@@ -6,5 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./main-page-text.component.scss']
 })
 export class MainPageTextComponent {
-  @Input() currentLang = ''; // тут мы получили язык от родительского класса (assortiment detailed component)
+  @Input() currentLang = localStorage.getItem('lang');; 
+  // localStorage.getItem('lang');
 }

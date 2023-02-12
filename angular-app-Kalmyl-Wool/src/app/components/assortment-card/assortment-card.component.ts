@@ -28,7 +28,7 @@ interface DataAssortment {
 
 
 export class AssortmentCardComponent implements OnInit, OnChanges {
-  @Input() currentLang = ''; // тут мы получили язык от родительского класса (assortiment component)
+  @Input() currentLang = localStorage.getItem('lang'); 
 
   response: any;
   assortment: DataAssortment[] | null = null;
@@ -43,6 +43,7 @@ export class AssortmentCardComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {
     this.imgUrl = 'http://188.225.75.102:1337';
+    localStorage.getItem('lang')
   }
 
 

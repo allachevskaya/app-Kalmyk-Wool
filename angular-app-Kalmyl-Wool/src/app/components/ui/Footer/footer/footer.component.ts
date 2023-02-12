@@ -20,6 +20,7 @@ interface DataName {
 })
 export class FooterComponent implements OnInit {
 
+  currentLang = localStorage.getItem('lang');
 
   response: any;
   name: DataName[] | null = null;
@@ -33,7 +34,16 @@ export class FooterComponent implements OnInit {
   }
 
   private async fetchStaff() {
-    this.name = await this.nameRepo.renderName()
+   
+    if (this.currentLang == 'en') {
+      this.name = await this.nameRepo.renderName_en();
+    } else if (this.currentLang == 'ch') {
+      this.name = await this.nameRepo.renderName_ch();
+    }
+    else {
+      this.name = await this.nameRepo.renderName()
+    }
   }
+  
 
 }

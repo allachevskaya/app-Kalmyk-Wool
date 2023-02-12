@@ -15,7 +15,8 @@
     "BTN": {
         "BTN_REDIRECT": "Contact",
         "BTN_REDIRECTus": "CONTACT US",
-        "BTN_MORE": "More detailed"
+        "BTN_MORE": "More detailed",
+        "BTN_MORE_NEWS":"Show more news"
     },
     "ABOUT": {
         "ABOUT__title": "Company Information",

@@ -15,7 +15,8 @@
     "BTN":{
         "BTN_REDIRECT":"Связаться",
         "BTN_REDIRECTus":"СВЯЗАТЬСЯ С НАМИ",
-        "BTN_MORE":"Подробнее"
+        "BTN_MORE":"Подробнее",
+        "BTN_MORE_NEWS":"Показать больше новостей"
     },
     "ABOUT":{
         "ABOUT__title":"ИНФОРМАЦИЯ О КОМПАНИИ",

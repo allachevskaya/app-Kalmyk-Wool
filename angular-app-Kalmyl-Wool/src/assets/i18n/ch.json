@@ -15,7 +15,8 @@
     "BTN": {
         "BTN_REDIRECT": "联系我们",
         "BTN_REDIRECTus":"联络我们",
-        "BTN_MORE":"更详细"
+        "BTN_MORE":"更详细",
+        "BTN_MORE_NEWS":" 顯示更多新聞"
     },
     "ABOUT": {
         "ABOUT__title": "公司资料",

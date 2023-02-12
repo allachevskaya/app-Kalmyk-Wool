@@ -66,6 +66,7 @@ export class GeneralService {
 
   async renderDetailed() {
     const response = await fetch('http://188.225.75.102:1337/api/detaileds?populate=*&locale=ru&sort[0]=updatedAt%3Aasc%3Adesc');
+    // const response = await fetch ('pagination[page]=1&pagination[pageSize]=10')
     const respData = await response.json();
     const { data } = respData;
     return data;
@@ -85,7 +86,7 @@ export class GeneralService {
   }
 
   async renderCard() {
-    const response = await fetch('http://188.225.75.102:1337/api/news-cards?populate=*&locale=ru&sort[0]=updatedAt%3Aasc%3Adesc');
+    const response = await fetch('http://188.225.75.102:1337/api/news-cards?populate=*&locale=ru&sort[1]=updatedAt%3Aasc%3Adesc');///////////
     const respData = await response.json();
     const { data } = respData;
     return data;

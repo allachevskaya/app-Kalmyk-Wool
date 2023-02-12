@@ -33,6 +33,7 @@ import { GeneralService } from './services/general.service';
 
 
 
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }

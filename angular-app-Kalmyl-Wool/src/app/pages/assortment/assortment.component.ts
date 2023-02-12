@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./assortment.component.scss']
 })
 export class AssortmentComponent {
-  currentLang = 'ru';
+  currentLang = localStorage.getItem('lang');
 
-  GetLang(data:any){   // тут получили язык из дочернего компонента
-    console.log('данные из хедера которые изменилиы в ассортимент', data);
-    this.currentLang = data  // тут мы присвоили значение языка и отправили данные в карточку 
+  GetLang(data:any){   
+    this.currentLang = data  
  } 
 }

@@ -6,10 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./assortment-detailed.component.scss']
 })
 export class AssortmentDetailedComponent {
-  currentLang = 'ru';
+//   currentLang = 'ru';
 
-  GetLang(data:any){   // тут получили язык из дочернего компонента
-    // console.log('данные из хедера которые изменилиы в ассортимент detailed', data);
-    this.currentLang = data  // тут мы присвоили значение языка и отправили данные в карточку 
- } 
+//   GetLang(data:any){   // тут получили язык из дочернего компонента
+//     // console.log('данные из хедера которые изменилиы в ассортимент detailed', data);
+//     this.currentLang = data  // тут мы присвоили значение языка и отправили данные в карточку 
+//  } 
+currentLang = localStorage.getItem('lang');
+
+GetLang(data:any){   // тут получили язык из дочернего компонента
+  this.currentLang = data  // тут мы присвоили значение языка и отправили данные в карточку 
+} 
 }

@@ -2,13 +2,13 @@
     <div class="assortmentItems-item" *ngFor="let item of assortmentDetailed; ">
        <h5>{{item.attributes.title}}</h5>
        <div class="assortmentItems-item-slider">
-          <div class="assortmentItems-item-slider-slide" *ngIf="flag">
+          <div class="assortmentItems-item-slider-slide" *ngIf="!flag">
             <img src="{{ imgUrl + item.attributes.img.data[0].attributes.url}}" alt="img">
             <img src="{{ imgUrl + item.attributes.img.data[1].attributes.url}}" alt="img">
 
           </div>
 
-          <div class="assortmentItems-OpenSlider" *ngIf="!flag">
+          <div class="assortmentItems-OpenSlider" *ngIf="flag">
              <div *ngFor="let tmp of item.attributes.img.data; let i =index"  >
                 
                 <img src="{{ imgUrl + tmp.attributes.url}}" alt="img">
@@ -17,7 +17,7 @@
           </div>
 
           <button (click)="openIMG()" class="assortmentItems-item-slider-showImg">
-             <p>{{titleBtn}}</p>
+             <p>{{'BTN.BTN_MORE' | translate}}</p>
           </button>
        </div>
        <div class="assortmentItems-item-content">

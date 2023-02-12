@@ -1,6 +1,12 @@
-<div class="container news-container">
 
-    <div class="card" *ngFor="let item of cards">
+<div class="news-btn">
+    <button (click)="openCard()" >{{'BTN.BTN_MORE_NEWS' |translate}}</button>
+</div>
+
+<div class="container news-container" *ngIf="!_openCard">
+
+    
+    <div class="card" *ngFor="let item of cards | slice:0:5">
         <img src="{{ imgUrl + item.attributes.img.data.attributes.url}}" alt="img">
 
         <div class="card-title">
@@ -19,4 +25,31 @@
         </div>
     </div>
 
+  
 </div>
+
+<div class="container news-container" *ngIf="_openCard">
+
+    
+    <div class="card" *ngFor="let item of cards | slice:5">
+        <img src="{{ imgUrl + item.attributes.img.data.attributes.url}}" alt="img">
+
+        <div class="card-title">
+            {{item.attributes.title}}
+        </div>
+        <div class="card-description">
+            {{item.attributes.description}}
+        </div>
+        <div class="card-date">
+            {{item.attributes.date}}
+        </div>
+        <div class="card-link">
+            <a href={{item.attributes.link}}>
+                <p>{{'BTN.BTN_MORE' | translate}}</p>
+            </a>
+        </div>
+    </div>
+
+  
+</div>
+
