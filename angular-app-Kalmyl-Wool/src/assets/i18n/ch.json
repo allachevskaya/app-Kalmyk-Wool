@@ -50,5 +50,19 @@
         "FOOTER__title":"有限责任公司 卡尔梅克Wool ",
         "FOOTER__director": "卡尔梅克Vul有限责任公司执行董事",
         "FOOTER__tel":"电话.:"
+    },
+    "DETAILED": {
+        "BRAND": "品牌",
+        "PRODUCTION": "生產",
+        "WEIGHT": "重量（公斤）",
+        "MEASUREMENT": "計量單位（件）",
+        "PRICE": "FOB 美元價格從到",
+        "MINIMUM_VOLUME": "最小音量",
+        "PORT": "到港交貨時間",
+        "NEAREST": "最近的港口",
+        "PACKAGING": "包裝細節",
+        "VOLUME": "體積",
+        "UNIT": "單元",
+        "PERIOD": "時期"
     }
 }

@@ -37,37 +37,23 @@ export class AssortmentItemComponent implements OnInit, OnChanges {
 
   response: any;
   flag?:boolean;
-  titleBtn?:string;
   imgUrl?: string;
   assortmentDetailed: DataDetailed[] | null = null;
 
 
-  @Input() currentLang = localStorage.getItem('lang'); // тут мы получили язык от родительского класса (assortiment detailed component)
+  @Input() currentLang = localStorage.getItem('lang'); 
 
 
   constructor(private detailedRepo: GeneralService) { }
 
-  // ngOnInit(): void {
-   
-   
-  //   this.imgUrl = 'http://188.225.75.102:1337';
-  //   this.flag = true;
-  //   this.titleBtn = 'Посмотреть больше';
-  // }
-  // ngOnChanges(changes: SimpleChanges): void {
-  //   this.fetchDetailed();
-  // }
   ngOnChanges(changes: SimpleChanges): void {
     this.fetchDetailed();
   }
 
   ngOnInit(): void {
     this.imgUrl = 'http://188.225.75.102:1337';
-
-
-    localStorage.getItem('lang')
-    // console.log( localStorage.getItem('lang'))
-
+    localStorage.getItem('lang');
+   
   }
 
   private async fetchDetailed() {
@@ -86,10 +72,5 @@ export class AssortmentItemComponent implements OnInit, OnChanges {
   openIMG() {
 
     this.flag = !this.flag;
-
-    // if (this.flag === true) {
-    //   this.titleBtn = 'Посмотреть больше';
-    // }
-    // else this.titleBtn = 'Посмотреть меньше';
   }
 }

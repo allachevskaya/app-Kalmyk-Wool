@@ -50,5 +50,19 @@
         "FOOTER__title": " Limited Liability Company  «KALMYK WOOL» ",
         "FOOTER__director": "Executive Director of Kalmyk Wool LLC",
         "FOOTER__tel": "Phone.:"
+    },
+    "DETAILED": {
+        "BRAND": "BRAND",
+        "PRODUCTION": "PRODUCTION",
+        "WEIGHT": "WEIGHT (KG)",
+        "MEASUREMENT": "UNIT OF MEASUREMENT (IN PIECE)",
+        "PRICE": "FOB PRICE IN USD FROM-TO",
+        "MINIMUM_VOLUME": "MINIMUM VOLUME",
+        "PORT": "DELIVERY TIME TO PORT",
+        "NEAREST": "NEAREST PORT",
+        "PACKAGING": "PACKAGING DETAILS",
+        "VOLUME": "VOLUME",
+        "UNIT": "UNIT",
+        "PERIOD": "PERIOD"
     }
 }

@@ -9,7 +9,7 @@
        align-items: center;
        background: #3D4043;;
        padding: 50px 0 0px;
-       margin-bottom: 50px;
+       margin-bottom: 30px;
        & h5{
         color: #fff;
         font-weight: 500;
@@ -24,6 +24,16 @@
     
 }
 
+.arrow{
+    position: fixed;
+    top:40%;
+    right: 10px;
+    & img{
+        width: 40px;
+        height: 50px;
+    }
+}
+
 @media (max-width:500px) {
         .news{
             &-title{
@@ -34,5 +44,13 @@
                 }
             }
         }
+        .arrow{
+            right: 5px;
+            & img{
+                width: 20px;
+    height: 25px;
+            }
+        }
 
 }
+
