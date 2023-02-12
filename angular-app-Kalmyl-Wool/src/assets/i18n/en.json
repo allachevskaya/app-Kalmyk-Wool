@@ -64,5 +64,9 @@
         "VOLUME": "VOLUME",
         "UNIT": "UNIT",
         "PERIOD": "PERIOD"
+    },
+    "ERROR":{
+        "TITLE":"Error 404.",
+        "SUBTITLE":"Page not found"
     }
 }

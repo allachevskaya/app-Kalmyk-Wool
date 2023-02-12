@@ -64,5 +64,9 @@
         "VOLUME": "體積",
         "UNIT": "單元",
         "PERIOD": "時期"
+    },
+    "ERROR":{
+        "TITLE":"錯誤 404。",
+        "SUBTITLE":" 找不到頁面 "
     }
 }
