@@ -51,7 +51,8 @@ export class AssortmentItemComponent implements OnInit, OnChanges {
   }
 
   ngOnInit(): void {
-    this.imgUrl = 'http://188.225.75.102:1337';
+    // this.imgUrl = 'http://188.225.75.102:1337';
+    this.imgUrl ='http://admin.kalmykwool.com'
     localStorage.getItem('lang');
    
   }
