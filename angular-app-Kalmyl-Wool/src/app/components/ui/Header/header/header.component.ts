@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent implements OnInit {
 
   toggleMenu: boolean | undefined;
-  lang = 'ru' || localStorage.getItem('lang') as string;
+  lang =  localStorage.getItem('lang') as string;
 
   @Output() myOutput = new EventEmitter<any>(); // тут мы отправляем какой язык выбрали
 
