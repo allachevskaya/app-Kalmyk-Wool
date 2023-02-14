@@ -46,7 +46,7 @@ export class NewsCardComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {
     // this.imgUrl = 'http://188.225.75.102:1337';
-    this.imgUrl ='http://admin.kalmykwool.com';
+    this.imgUrl ='https://admin.kalmykwool.com';
     localStorage.getItem('lang');
     this._openCard = false
   }

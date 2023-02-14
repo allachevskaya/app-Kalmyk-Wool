@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class GeneralService {
 
-  api = 'http://admin.kalmykwool.com'
+  api = 'https://admin.kalmykwool.com'
 
   constructor() { }
 
