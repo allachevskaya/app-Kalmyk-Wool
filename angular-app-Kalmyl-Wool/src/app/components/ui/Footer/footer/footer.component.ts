@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import {  GeneralService } from 'src/app/services/general.service';
 
 
@@ -18,7 +18,7 @@ interface DataName {
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent implements OnInit, OnChanges {
 
   currentLang = localStorage.getItem('lang');
 
@@ -30,7 +30,13 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
     this.fetchStaff();
-   
+    
+    localStorage.getItem('lang');
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.fetchStaff();
+    console.log(this.currentLang  )
   }
 
   private async fetchStaff() {
