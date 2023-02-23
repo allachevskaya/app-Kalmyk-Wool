@@ -89,19 +89,19 @@ export class GeneralService {
   }
 
   async renderCard() {
-    const response = await fetch(this.api +'api/news-cards?populate=*&locale=ru&sort[0]=date%3Adesc');///////////
+    const response = await fetch(this.api +'/api/news-cards?populate=*&locale=ru&sort[0]=date%3Adesc');///////////
     const respData = await response.json();
     const { data } = respData;
     return data;
   }
   async renderCard_en() {
-    const response = await fetch(this.api +'api/news-cards?populate=*&locale=en&sort[0]=date%3Adesc');
+    const response = await fetch(this.api +'/api/news-cards?populate=*&locale=en&sort[0]=date%3Adesc');
     const respData = await response.json();
     const { data } = respData;
     return data;
   }
   async renderCard_ch() {
-    const response = await fetch(this.api +'api/news-cards?populate=*&locale=zh&sort[0]=date%3Adesc');
+    const response = await fetch(this.api +'/api/news-cards?populate=*&locale=zh&sort[0]=date%3Adesc');
     const respData = await response.json();
     const { data } = respData;
     return data;
